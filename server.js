@@ -34,7 +34,7 @@ function getContentType(filePath) {
 // Create an HTTP server
 const server = http.createServer((req, res) => {
     // Build the file path based on the request URL
-    let filePath = path.join(__dirname, 'public', req.url === '/' ? 'pages/index.html' : req.url);
+    let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
 
     // Extract the file extension to determine the content type
     const contentType = getContentType(filePath);
