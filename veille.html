@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,31 +22,34 @@
             width: 100%;
             background-color: white;
             padding: 10px;
-            border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom */
-            z-index: 1000; /* Ensure the header is above other content */
+            border-bottom: 1px solid #ccc;
+            /* Optional: Add a border at the bottom */
+            z-index: 1000;
+            /* Ensure the header is above other content */
         }
 
         /* Navigation styles */
         .dropdown-nav ul {
             list-style: none;
-            text-align: center; /* Center the list items */
+            text-align: center;
+            /* Center the list items */
         }
 
-            .dropdown-nav ul li {
-                display: inline-block;
-                position: relative;
-            }
+        .dropdown-nav ul li {
+            display: inline-block;
+            position: relative;
+        }
 
-                .dropdown-nav ul li a {
-                    display: block;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    color: black;
-                }
+        .dropdown-nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
 
-                .dropdown-nav ul li:hover > ul {
-                    display: block;
-                }
+        .dropdown-nav ul li:hover>ul {
+            display: block;
+        }
 
         /* Dropdown menu styles */
         .dropdown-menu {
@@ -55,80 +59,111 @@
             border: 1px solid #ccc;
             padding: 10px;
             z-index: 1;
-            width: 200px; /* Adjust width as needed */
+            width: 200px;
+            /* Adjust width as needed */
         }
 
-            .dropdown-menu li {
-                display: block;
-            }
+        .dropdown-menu li {
+            display: block;
+        }
 
-                .dropdown-menu li a {
-                    color: black;
-                    text-decoration: none;
-                }
+        .dropdown-menu li a {
+            color: black;
+            text-decoration: none;
+        }
 
-                /* Remove background color change on hover */
-                .dropdown-menu li:hover a {
-                    background-color: transparent;
-                }
+        /* Remove background color change on hover */
+        .dropdown-menu li:hover a {
+            background-color: transparent;
+        }
 
         /* Footer styles */
         .footer {
-            background-color: #4E567E; /* Apply the desired color */
+            background-color: #4E567E;
+            /* Apply the desired color */
             color: white;
-            padding: 10px; /* Adjust padding as needed */
+            padding: 10px;
+            /* Adjust padding as needed */
             left: 0;
             bottom: 0;
-            width: 100%; /* Set width to 100% of the viewport */
-            height: 200px; /* Set footer height to 200 pixels */
+            width: 100%;
+            /* Set width to 100% of the viewport */
+            height: 200px;
+            /* Set footer height to 200 pixels */
             display: flex;
-            flex-direction: column; /* Change to column layout */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
+            flex-direction: column;
+            /* Change to column layout */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
         }
 
         .footer-links {
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            width: 100%; /* Ensure the links span the width of the footer */
-            margin-bottom: 10px; /* Adjust margin to create space between images and text */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            width: 100%;
+            /* Ensure the links span the width of the footer */
+            margin-bottom: 10px;
+            /* Adjust margin to create space between images and text */
         }
 
-            .footer-links a {
-                margin: 0 10px; /* Adjust margin between images */
-                display: flex;
-                justify-content: center; /* Center horizontally */
-                align-items: center; /* Center vertically */
-            }
+        .footer-links a {
+            margin: 0 10px;
+            /* Adjust margin between images */
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+        }
 
-                .footer-links a img {
-                    width: 30px; /* Set image width to 30 pixels */
-                    height: 30px; /* Set image height to 30 pixels */
-                }
+        .footer-links a img {
+            width: 30px;
+            /* Set image width to 30 pixels */
+            height: 30px;
+            /* Set image height to 30 pixels */
+        }
 
         .creator-info {
-            text-align: center; /* Align the text to the center */
-            font-size: 15px; /* Adjust the font size as needed */
-            color: white; /* Adjust the color of the text */
-            margin-top: 10px; /* Add margin to push the text lower */
+            text-align: center;
+            /* Align the text to the center */
+            font-size: 15px;
+            /* Adjust the font size as needed */
+            color: white;
+            /* Adjust the color of the text */
+            margin-top: 10px;
+            /* Add margin to push the text lower */
         }
 
         .download-button {
-            background-color: blue; /* Blue background color */
-            color: white; /* White text color */
-            padding: 10px 20px; /* Add padding to increase button size */
-            font-size: 16px; /* Increase font size */
-            border: none; /* Remove border */
-            cursor: pointer; /* Change cursor to pointer on hover */
-            border-radius: 5px; /* Add rounded corners */
-            text-decoration: none; /* Remove underline */
-            display: inline-block; /* Display as inline-block element */
+            background-color: blue;
+            /* Blue background color */
+            color: white;
+            /* White text color */
+            padding: 10px 20px;
+            /* Add padding to increase button size */
+            font-size: 16px;
+            /* Increase font size */
+            border: none;
+            /* Remove border */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            border-radius: 5px;
+            /* Add rounded corners */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Display as inline-block element */
         }
 
-            .download-button:hover {
-                background-color: darkblue; /* Darker blue color on hover */
-            }
+        .download-button:hover {
+            background-color: darkblue;
+            /* Darker blue color on hover */
+        }
 
         /* CSS for arrows */
         .scroll-arrow {
@@ -137,19 +172,24 @@
             transform: translateY(-50%);
             padding: 10px;
             cursor: pointer;
-            z-index: 9999; /* Ensure arrows stay on top of other elements */
+            z-index: 9999;
+            /* Ensure arrows stay on top of other elements */
         }
 
         .up-arrow {
-            right: 40px; /* Adjust this value for desired separation */
+            right: 40px;
+            /* Adjust this value for desired separation */
         }
 
         .down-arrow {
-            right: 40px; /* Adjust this value for desired separation */
-            top: calc(50% + 25px); /* Adjust this value to position the down arrow lower */
+            right: 40px;
+            /* Adjust this value for desired separation */
+            top: calc(50% + 25px);
+            /* Adjust this value to position the down arrow lower */
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -189,7 +229,8 @@
     </header>
 
     <!-- Veille -->
-    <div id="veille" style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div id="veille"
+        style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
         <div>
             <img src="images/veille.png" title="veille" style="width:400px">
         </div>
@@ -200,7 +241,8 @@
             <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
             <br /><br />
             <span style="font-size: 20px; line-height: 1.6;">
-                Pour effectuer ma veille technologique, j'utilise "Google Alertes", qui me crée des alertes toutes les semaines.
+                Pour effectuer ma veille technologique, j'utilise "Google Alertes", qui me crée des alertes toutes les
+                semaines.
                 Celui-ci me permet d'être toujours au courant de toutes les actualités que je souhaite.
                 J'ai ajouté à celui-ci, différentes sources telles que : ANSSI, Le Monde Informatique, etc.
                 Pour ma veille technologique j'ai choisi le Cloud Computing.
@@ -209,7 +251,8 @@
     </div>
 
     <!-- Cloud Computing -->
-    <div id="cloud" style="background-color:#ccc; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div id="cloud"
+        style="background-color:#ccc; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
         <div style="text-align: center; color: #212121; max-width: 600px; margin-right: 200px;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Cloud Computing
@@ -217,10 +260,13 @@
             <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
             <br /><br />
             <span style="font-size: 20px; line-height: 1.6;">
-                Le cloud computing, ou informatique en nuage, est un modèle de prestation de services informatiques où les différents services ou ressources
-                (serveurs web, stockage, réseaux, base de données, logiciels, outils analytiques, etc.) sont accessibles à distance via Internet, 
-                sans que l'utilisateur ait besoin de posséder et de gérer physiquement ces infrastructures. 
-                Le cloud repose sur des centres de données, où ces ressources sont centralisées, gérées et sécurisées par des fournisseurs de services de 
+                Le cloud computing, ou informatique en nuage, est un modèle de prestation de services informatiques où
+                les différents services ou ressources
+                (serveurs web, stockage, réseaux, base de données, logiciels, outils analytiques, etc.) sont accessibles
+                à distance via Internet,
+                sans que l'utilisateur ait besoin de posséder et de gérer physiquement ces infrastructures.
+                Le cloud repose sur des centres de données, où ces ressources sont centralisées, gérées et sécurisées
+                par des fournisseurs de services de
                 cloud comme Amazon Web Services (AWS), Microsoft Azure, ou Google Cloud.
             </span>
         </div>
@@ -230,8 +276,9 @@
     </div>
 
     <!-- Mes Articles -->
-    <div id="articles" style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%; height: 800px;">
-        
+    <div id="articles"
+        style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%; height: 800px;">
+
         <div id="articlestitre" style="text-align: center; color: #212121; max-width: 600px; margin-bottom: 20px;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Mes articles
@@ -240,48 +287,62 @@
         </div>
         <br /><br />
         <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-            <div class="article1" style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/azure.png" alt="Article Image" style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <div class="article1"
+                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
+                <img src="images/azure.png" alt="Article Image"
+                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <div
+                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
                     <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
                         Le "cloud" tire les résultats de Microsoft, mais les coûts inquiètent et le cours chute
                     </h2>
                     <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
-                        Le géant de l'informatique Microsoft a battu les pronostics des analystes lors du premier trimestre de son exercice décalé. 
-                        Son activité cloud, dopée par l'IA, progresse mieux qu'attendu. 
+                        Le géant de l'informatique Microsoft a battu les pronostics des analystes lors du premier
+                        trimestre de son exercice décalé.
+                        Son activité cloud, dopée par l'IA, progresse mieux qu'attendu.
                         Certains s'inquiètent toutefois du coût de développement de ces services.
                     </p>
                     <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
                         Auteur: Olivier Samois
                     </p>
-                    <a href="https://www.lecho.be/entreprises/tech-science/le-cloud-tire-les-resultats-de-microsoft-mais-les-couts-inquietent-et-le-cours-chute/10571903.html" style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    <a href="https://www.lecho.be/entreprises/tech-science/le-cloud-tire-les-resultats-de-microsoft-mais-les-couts-inquietent-et-le-cours-chute/10571903.html"
+                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
                         Lire l'article
                     </a>
                 </div>
             </div>
 
-            <div class="article2" style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/gcp.png" alt="Article Image" style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <div class="article2"
+                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
+                <img src="images/gcp.png" alt="Article Image"
+                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <div
+                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
                     <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
                         Google en pleine ascension grâce à l'IA et au cloud
                     </h2>
                     <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
-                        Le groupe Alphabet, maison mère de Google, affiche une croissance spectaculaire au troisième trimestre 2023, 
-                        portée par des avancées significatives dans le domaine de l'intelligence artificielle et du cloud.
+                        Le groupe Alphabet, maison mère de Google, affiche une croissance spectaculaire au troisième
+                        trimestre 2023,
+                        portée par des avancées significatives dans le domaine de l'intelligence artificielle et du
+                        cloud.
                     </p>
                     <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
                         Auteur: Paolo Garoscio
                     </p>
-                    <a href="https://www.journaldeleconomie.fr/google-en-pleine-ascension-grace-a-lia-et-au-cloud/" style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    <a href="https://www.journaldeleconomie.fr/google-en-pleine-ascension-grace-a-lia-et-au-cloud/"
+                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
                         Lire l'article
                     </a>
                 </div>
             </div>
 
-            <div class="article2" style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/cloud.png" alt="Article Image" style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <div class="article2"
+                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
+                <img src="images/cloud.png" alt="Article Image"
+                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <div
+                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
                     <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
                         Titre de l'Article
                     </h2>
@@ -291,15 +352,19 @@
                     <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
                         Auteur: John Doe
                     </p>
-                    <a href="#" style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    <a href="#"
+                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
                         Lire l'article
                     </a>
                 </div>
             </div>
 
-            <div class="article2" style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/cloud.png" alt="Article Image" style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <div class="article2"
+                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
+                <img src="images/cloud.png" alt="Article Image"
+                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <div
+                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
                     <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
                         Titre de l'Article
                     </h2>
@@ -309,24 +374,27 @@
                     <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
                         Auteur: John Doe
                     </p>
-                    <a href="#" style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    <a href="#"
+                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
                         Lire l'article
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-links">
-            <a href="https://github.com/zac7518"><img src="images/github1.svg" title="github"/></a>
-            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="images/linkedin1.svg" title="linkedin"/></a>
-            <a href="mailto:winkler75013@gmail.com"><img src="images/mail1.svg" title="mail"/></a>
+            <a href="https://github.com/zac7518"><img src="images/github1.svg" title="github" /></a>
+            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="images/linkedin1.svg"
+                    title="linkedin" /></a>
+            <a href="mailto:winkler75013@gmail.com"><img src="images/mail1.svg" title="mail" /></a>
         </div>
         <div class="creator-info">
             <p>Created by Zachary Winkler™</p>
         </div>
     </footer>
 </body>
+
 </html>

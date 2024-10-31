@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,31 +22,34 @@
             width: 100%;
             background-color: white;
             padding: 10px;
-            border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom */
-            z-index: 1000; /* Ensure the header is above other content */
+            border-bottom: 1px solid #ccc;
+            /* Optional: Add a border at the bottom */
+            z-index: 1000;
+            /* Ensure the header is above other content */
         }
 
         /* Navigation styles */
         .dropdown-nav ul {
             list-style: none;
-            text-align: center; /* Center the list items */
+            text-align: center;
+            /* Center the list items */
         }
 
-            .dropdown-nav ul li {
-                display: inline-block;
-                position: relative;
-            }
+        .dropdown-nav ul li {
+            display: inline-block;
+            position: relative;
+        }
 
-                .dropdown-nav ul li a {
-                    display: block;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    color: black;
-                }
+        .dropdown-nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
 
-                .dropdown-nav ul li:hover > ul {
-                    display: block;
-                }
+        .dropdown-nav ul li:hover>ul {
+            display: block;
+        }
 
         /* Dropdown menu styles */
         .dropdown-menu {
@@ -55,80 +59,111 @@
             border: 1px solid #ccc;
             padding: 10px;
             z-index: 1;
-            width: 200px; /* Adjust width as needed */
+            width: 200px;
+            /* Adjust width as needed */
         }
 
-            .dropdown-menu li {
-                display: block;
-            }
+        .dropdown-menu li {
+            display: block;
+        }
 
-                .dropdown-menu li a {
-                    color: black;
-                    text-decoration: none;
-                }
+        .dropdown-menu li a {
+            color: black;
+            text-decoration: none;
+        }
 
-                /* Remove background color change on hover */
-                .dropdown-menu li:hover a {
-                    background-color: transparent;
-                }
+        /* Remove background color change on hover */
+        .dropdown-menu li:hover a {
+            background-color: transparent;
+        }
 
         /* Footer styles */
         .footer {
-            background-color: #4E567E; /* Apply the desired color */
+            background-color: #4E567E;
+            /* Apply the desired color */
             color: white;
-            padding: 10px; /* Adjust padding as needed */
+            padding: 10px;
+            /* Adjust padding as needed */
             left: 0;
             bottom: 0;
-            width: 100%; /* Set width to 100% of the viewport */
-            height: 200px; /* Set footer height to 200 pixels */
+            width: 100%;
+            /* Set width to 100% of the viewport */
+            height: 200px;
+            /* Set footer height to 200 pixels */
             display: flex;
-            flex-direction: column; /* Change to column layout */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
+            flex-direction: column;
+            /* Change to column layout */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
         }
 
         .footer-links {
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            width: 100%; /* Ensure the links span the width of the footer */
-            margin-bottom: 10px; /* Adjust margin to create space between images and text */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            width: 100%;
+            /* Ensure the links span the width of the footer */
+            margin-bottom: 10px;
+            /* Adjust margin to create space between images and text */
         }
 
-            .footer-links a {
-                margin: 0 10px; /* Adjust margin between images */
-                display: flex;
-                justify-content: center; /* Center horizontally */
-                align-items: center; /* Center vertically */
-            }
+        .footer-links a {
+            margin: 0 10px;
+            /* Adjust margin between images */
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+        }
 
-                .footer-links a img {
-                    width: 30px; /* Set image width to 30 pixels */
-                    height: 30px; /* Set image height to 30 pixels */
-                }
+        .footer-links a img {
+            width: 30px;
+            /* Set image width to 30 pixels */
+            height: 30px;
+            /* Set image height to 30 pixels */
+        }
 
         .creator-info {
-            text-align: center; /* Align the text to the center */
-            font-size: 15px; /* Adjust the font size as needed */
-            color: white; /* Adjust the color of the text */
-            margin-top: 10px; /* Add margin to push the text lower */
+            text-align: center;
+            /* Align the text to the center */
+            font-size: 15px;
+            /* Adjust the font size as needed */
+            color: white;
+            /* Adjust the color of the text */
+            margin-top: 10px;
+            /* Add margin to push the text lower */
         }
 
         .download-button {
-            background-color: blue; /* Blue background color */
-            color: white; /* White text color */
-            padding: 10px 20px; /* Add padding to increase button size */
-            font-size: 16px; /* Increase font size */
-            border: none; /* Remove border */
-            cursor: pointer; /* Change cursor to pointer on hover */
-            border-radius: 5px; /* Add rounded corners */
-            text-decoration: none; /* Remove underline */
-            display: inline-block; /* Display as inline-block element */
+            background-color: blue;
+            /* Blue background color */
+            color: white;
+            /* White text color */
+            padding: 10px 20px;
+            /* Add padding to increase button size */
+            font-size: 16px;
+            /* Increase font size */
+            border: none;
+            /* Remove border */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            border-radius: 5px;
+            /* Add rounded corners */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Display as inline-block element */
         }
 
-            .download-button:hover {
-                background-color: darkblue; /* Darker blue color on hover */
-            }
+        .download-button:hover {
+            background-color: darkblue;
+            /* Darker blue color on hover */
+        }
 
         /* CSS for arrows */
         .scroll-arrow {
@@ -137,19 +172,24 @@
             transform: translateY(-50%);
             padding: 10px;
             cursor: pointer;
-            z-index: 9999; /* Ensure arrows stay on top of other elements */
+            z-index: 9999;
+            /* Ensure arrows stay on top of other elements */
         }
 
         .up-arrow {
-            right: 40px; /* Adjust this value for desired separation */
+            right: 40px;
+            /* Adjust this value for desired separation */
         }
 
         .down-arrow {
-            right: 40px; /* Adjust this value for desired separation */
-            top: calc(50% + 25px); /* Adjust this value to position the down arrow lower */
+            right: 40px;
+            /* Adjust this value for desired separation */
+            top: calc(50% + 25px);
+            /* Adjust this value to position the down arrow lower */
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -189,7 +229,8 @@
     </header>
 
     <!-- Situations -->
-    <div id="situations" style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div id="situations"
+        style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
         <div style="text-align: center; color: #212121; max-width: 700px; margin: 0 auto;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Situations
@@ -202,13 +243,15 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-links">
-            <a href="https://github.com/zac7518"><img src="images/github1.svg" title="github"/></a>
-            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="images/linkedin1.svg" title="linkedin"/></a>
-            <a href="mailto:winkler75013@gmail.com"><img src="images/mail1.svg" title="mail"/></a>
+            <a href="https://github.com/zac7518"><img src="images/github1.svg" title="github" /></a>
+            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="images/linkedin1.svg"
+                    title="linkedin" /></a>
+            <a href="mailto:winkler75013@gmail.com"><img src="images/mail1.svg" title="mail" /></a>
         </div>
         <div class="creator-info">
             <p>Created by Zachary Winkler™</p>
         </div>
     </footer>
 </body>
+
 </html>
