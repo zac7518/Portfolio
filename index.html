@@ -258,6 +258,13 @@
             min-height: 800px;
             /* Facultatif : garantir une taille minimale */
         }
+
+        .multicolor-background {
+            width: 100%;
+            height: 800px;
+            background: linear-gradient(to bottom right, #C292DE 0%, #67B3E4 40%, #95A3E0 100%);
+            padding: 20px; position: relative; display: flex; justify-content: center; align-items: center;
+        }
     </style>
 
     <!-- Blocs compétences -->
@@ -345,19 +352,18 @@
         </div>
     </div>
 
-    <!-- Presentation -->
-    <div id="presentation"
-        style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <!-- Présentation -->    
+    <div class="multicolor-background">
         <div id="imagepresentation">
-            <img src="images/presentation.png" title="presentation" />
+            <img src="images/administrateur.png" title="presentation" />
         </div>
         <div style="text-align: center; color: #212121; max-width: 600px; margin-left: 200px;">
-            <span style="font-size: 40px; display: block; margin-bottom: 20px;">
+            <span style="font-size: 40px; display: block; margin-bottom: 20px;font-family: Poppins, sans-serif;font-weight: bold;">
                 Présentation
             </span>
-            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
+            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 20%;">
             <br /><br />
-            <span style="font-size: 20px; line-height: 1.6;">
+            <span style="font-size: 20px; line-height: 1.6;font-family: Poppins, sans-serif;">
                 Je m'appelle Zachary Winkler. Je suis actuellement en BTS SIO (Service informatique aux organisations)
                 spécialité SISR
                 (Solutions infrastructure, systèmes et réseaux). Cette formation me permet d'acquérir des compétences
