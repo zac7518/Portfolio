@@ -6,359 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="images/iconecloud.png">
-    <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Header styles */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            /* Optional: Add a border at the bottom */
-            z-index: 1000;
-            /* Ensure the header is above other content */
-        }
-
-        /* Navigation styles */
-        .dropdown-nav ul {
-            list-style: none;
-            text-align: center;
-            /* Center the list items */
-        }
-
-        .dropdown-nav ul li {
-            display: inline-block;
-            position: relative;
-        }
-
-        .dropdown-nav ul li a {
-            display: block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: black;
-        }
-
-        .dropdown-nav ul li:hover>ul {
-            display: block;
-        }
-
-        /* Dropdown menu styles */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            z-index: 1;
-            width: 200px;
-            /* Adjust width as needed */
-        }
-
-        .dropdown-menu li {
-            display: block;
-        }
-
-        .dropdown-menu li a {
-            color: black;
-            text-decoration: none;
-        }
-
-        /* Remove background color change on hover */
-        .dropdown-menu li:hover a {
-            background-color: transparent;
-        }
-
-        /* Footer styles */
-        .footer {
-            background-color: #4E567E;
-            /* Apply the desired color */
-            color: white;
-            padding: 10px;
-            /* Adjust padding as needed */
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            /* Set width to 100% of the viewport */
-            height: 200px;
-            /* Set footer height to 200 pixels */
-            display: flex;
-            flex-direction: column;
-            /* Change to column layout */
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-            width: 100%;
-            /* Ensure the links span the width of the footer */
-            margin-bottom: 10px;
-            /* Adjust margin to create space between images and text */
-        }
-
-        .footer-links a {
-            margin: 0 10px;
-            /* Adjust margin between images */
-            display: flex;
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-        }
-
-        .footer-links a img {
-            width: 30px;
-            /* Set image width to 30 pixels */
-            height: 30px;
-            /* Set image height to 30 pixels */
-        }
-
-        .creator-info {
-            text-align: center;
-            /* Align the text to the center */
-            font-size: 15px;
-            /* Adjust the font size as needed */
-            color: white;
-            /* Adjust the color of the text */
-            margin-top: 10px;
-            /* Add margin to push the text lower */
-        }
-
-        .download-button {
-            background-color: blue;
-            /* Blue background color */
-            color: white;
-            /* White text color */
-            padding: 10px 20px;
-            /* Add padding to increase button size */
-            font-size: 16px;
-            /* Increase font size */
-            border: none;
-            /* Remove border */
-            cursor: pointer;
-            /* Change cursor to pointer on hover */
-            border-radius: 5px;
-            /* Add rounded corners */
-            text-decoration: none;
-            /* Remove underline */
-            display: inline-block;
-            /* Display as inline-block element */
-            margin-top: 200px;
-            margin-left: -40px;
-        }
-
-        .download-button:hover {
-            background-color: darkblue;
-            /* Darker blue color on hover */
-        }
-
-        /* Competences styles */
-        .image-container {
-            position: relative;
-            width: 400px;
-            /* Adjust width as needed */
-            height: 400px;
-            /* Adjust height as needed */
-            overflow: hidden;
-            margin: 0 auto;
-            /* Center the container horizontally */
-            left: -50px;
-            /* Adjust the left position as needed */
-        }
-
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            border-radius: 20px;
-            /* Adjust border radius as needed for rounded corners */
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide img {
-            width: 100%;
-            /* Increase the width of the image */
-            height: 100%;
-            /* Increase the height of the image */
-            object-fit: cover;
-        }
-
-        button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        #prevBtn {
-            right: 5px;
-        }
-
-        #nextBtn {
-            left: 5px;
-        }
-
-        /* Desk section styles */
-        #Desk {
-            position: relative;
-            text-align: center;
-        }
-
-        #Desk img {
-            max-width: 100%;
-            max-height: 100%;
-            margin-bottom: -5px;
-        }
-
-        #deskimage {
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-        }
-
-        #deskimage span {
-            display: block;
-        }
-
-        #deskimage span:first-of-type {
-            font-size: 70px;
-        }
-
-        #deskimage span:last-of-type {
-            font-size: 35px;
-        }
-
-        #presentation,
-        #competences {
-            height: auto;
-            /* Laissez l'élément s'adapter à son contenu */
-            min-height: 800px;
-            /* Facultatif : garantir une taille minimale */
-        }
-
-        .multicolor-background {
-            width: 100%;
-            height: 800px;
-            background: linear-gradient(to bottom right, #C292DE 0%, #67B3E4 40%, #95A3E0 100%);
-            padding: 20px; position: relative; display: flex; justify-content: center; align-items: center;
-        }
-    </style>
-
-    <!-- Blocs compétences -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const slides = document.querySelectorAll('.slide');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-
-            let currentIndex = 0;
-
-            // Function to display current slide
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    if (i === index) {
-                        slide.style.transform = `translateX(0)`;
-                    } else {
-                        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-                    }
-                });
-            }
-
-            // Event listener for previous button
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-                showSlide(currentIndex);
-            });
-
-            // Event listener for next button
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % slides.length;
-                showSlide(currentIndex);
-            });
-
-            // Initially display the first slide
-            showSlide(currentIndex);
-        });
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <nav class="dropdown-nav">
-            <ul>
-                <li>
-                    <a href="#">Présentation</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html">Apprenti</a></li>
-                        <li><a href="entreprise.html">Entreprise</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Epreuve E4</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="tableausynthese.html">Tableau de synthèse</a></li>
-                        <li><a href="missionsformation.html">Missions réalisées en formation</a></li>
-                        <li><a href="missionsentreprise.html">Missions réalisées en entreprise</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Epreuve E5</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="situations.html">Situations</a></li>
-                        <li><a href="productions.html">Productions</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Veille</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="veille.html">Veille</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
 
-    <!-- Desk -->
-    <div id="Desk">
-        <img src="images/Desk.png" title="deskimage1" alt="Desk" />
-        <div id="deskimage">
-            <span style="font-size: 70px;">Zachary Winkler</span><br />
-            <span style="font-size: 35px;">Apprenti informaticien</span>
-        </div>
-    </div>
-
-    <!-- Présentation -->    
-    <div class="multicolor-background">
+    <!-- Présentation -->
+    <div class="divmulti">
         <div id="imagepresentation">
-            <img src="images/administrateur.png" title="presentation" />
+            <img src="images/webdd.png" title="presentation" style="width:200px" />
         </div>
         <div style="text-align: center; color: #212121; max-width: 600px; margin-left: 200px;">
-            <span style="font-size: 40px; display: block; margin-bottom: 20px;font-family: Poppins, sans-serif;font-weight: bold;">
+            <span
+                style="font-size: 40px; display: block; margin-bottom: 20px;font-family: Poppins, sans-serif;font-weight: bold;">
                 Présentation
             </span>
             <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 20%;">
@@ -382,8 +46,7 @@
     </div>
 
     <!-- Competences -->
-    <div id="competences"
-        style="background-color:#ccc; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divgris">
         <div style="text-align: center; color: #212121; max-width: 600px; margin-right: 200px;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Compétences
@@ -421,17 +84,8 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="https://github.com/zac7518"><img src="images/github1.svg" title="github" /></a>
-            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="images/linkedin1.svg"
-                    title="linkedin" /></a>
-            <a href="mailto:winkler75013@gmail.com"><img src="images/mail1.svg" title="mail" /></a>
-        </div>
-        <div class="creator-info">
-            <p>Created by Zachary Winkler™</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    
 </body>
 
 </html>

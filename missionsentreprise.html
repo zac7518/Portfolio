@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="images/iconecloud.png">
+    <script src="script.js" defer></script>
     <style>
         /* Reset default margin and padding */
         * {
@@ -193,44 +194,10 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <nav class="dropdown-nav">
-            <ul>
-                <li>
-                    <a href="#">Présentation</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html">Apprenti</a></li>
-                        <li><a href="entreprise.html">Entreprise</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Epreuve E4</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="tableausynthese.html">Tableau de synthèse</a></li>
-                        <li><a href="missionsformation.html">Missions réalisées en formation</a></li>
-                        <li><a href="missionsentreprise.html">Missions réalisées en entreprise</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Epreuve E5</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="situations.html">Situations</a></li>
-                        <li><a href="productions.html">Productions</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Veille</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="veille.html">Veille</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <!-- Trackers -->
-    <div
-        style="background-color: #f3f3f3; padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divbl">
         <div style="margin-right: 200px;">
             <img src="images/Trackers.png" title="imagetrackers" style="width: 400px;">
         </div>
@@ -254,8 +221,7 @@
     </div>
 
     <!-- Support logiciel -->
-    <div
-        style="background-color: #ccc; padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divgris">
         <div style="text-align: center; color: #212121; max-width: 600px; margin-right: 200px;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Support logiciel sur les ERP
@@ -279,8 +245,7 @@
     </div>
 
     <!-- Synology -->
-    <div id="synology"
-        style="background-color: #f3f3f3; padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divbl">
         <div style="margin-right: 200px;">
             <img src="images/Synology.png" title="image_synology" style="width: 400px;">
         </div>
@@ -303,8 +268,7 @@
     </div>
 
     <!-- Serveur BDD -->
-    <div id="serveurbdd"
-        style="background-color: #ccc; padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divgris">
         <div style="text-align: center; color: #212121; max-width: 600px; margin-right: 200px;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Configuration d'un serveur partagé de base de données
@@ -327,8 +291,7 @@
     </div>
 
     <!-- Déménagement -->
-    <div id="demenagement"
-        style="background-color: #f3f3f3; padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divbl">
         <div style="margin-right: 200px;">
             <img src="images/Demenagement.png" title="imagesynology" style="width: 400px;">
         </div>
@@ -353,8 +316,7 @@
     </div>
 
     <!-- Redirection DNS -->
-    <div id="redirectiondns"
-        style="background-color: #ccc; padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+    <div class="divgris">
         <div style="text-align: center; color: #212121; max-width: 600px; margin-right: 200px;">
             <span style="font-size: 40px; display: block; margin-bottom: 20px;">
                 Configuration de la redirection DNS
@@ -379,17 +341,8 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="https://github.com/zac7518"><img src="images/github1.svg" title="github" /></a>
-            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="images/linkedin1.svg"
-                    title="linkedin" /></a>
-            <a href="mailto:winkler75013@gmail.com"><img src="images/mail1.svg" title="mail" /></a>
-        </div>
-        <div class="creator-info">
-            <p>Created by Zachary Winkler™</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    
 </body>
 
 </html>
