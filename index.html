@@ -22,7 +22,7 @@
         </div>
         <div class="divtxtd">
             <span class="titre">
-                Présentation
+                A propos de moi
             </span>
             <hr class="sepa">
             <br /><br />
@@ -44,47 +44,69 @@
         </div>
     </div>
 
-    <!-- Competences -->
-    <div class="divgris">
-        <div class="divtxtg">
+    <!-- Slideshow -->
+    <div class="divbl">
+        <div class="divtxtc">
             <span class="titre">
                 Compétences
             </span>
             <hr class="sepa">
             <br /><br />
             <span class="texte">
-                Actuellement apprenti administrateur systèmes et réseaux, je cumule de l'expérience dans la conception,
-                la mise
-                en œuvre et la gestion d'infrastructures informatiques et dans l'exploitation de logiciels. Ma
-                polyvalence s'étend
-                à la l'administration de serveurs, la gestion de réseau, la virtualisation, la configuration des
-                pare-feu, et
-                l'automatisation des tâches avec des outils tels que PowerShell. Sensible à la qualité du service et à
-                la sécurité
-                informatique, je suis déterminé à relever les défis complexes de l'administration des systèmes et des
-                réseaux.
+                Étudiant en apprentissage en systèmes et réseaux informatiques, je développe des compétences en support à l'utilisateur, administration de 
+                systèmes, gestion de réseaux, bases de données, et programmation. 
+                Mes missions en entreprise m'offrent une immersion concrète dans la configuration et la maintenance d'infrastructures informatiques. 
+                Passionné par l'informatique et les nouvelles technologies, je suis motivé à perfectionner mes 
+                compétences pour répondre aux besoins de l'entreprise.
             </span>
-        </div>
-        <div>
-            <div class="image-container">
-                <div class="slide">
-                    <img src="images/image1.png" alt="Image 1">
+            <br /><br /><br /><br />
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/cloud.png" title="image">
+                    <div class="text">Microsoft</div>
                 </div>
-                <div class="slide">
-                    <img src="images/image2.png" alt="Image 2">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/cloud.png" title="image">
+                    <div class="text">Linux</div>
                 </div>
-                <div class="slide">
-                    <img src="images/image3.png" alt="Image 3">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/cloud.png" title="image">
+                    <div class="text">Cisco</div>
                 </div>
-                <button id="nextBtn" type="button">Avant</button>
-                <button id="prevBtn" type="button">Après</button>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/cloud.png" title="image">
+                    <div class="text">MariaDB</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <div id="footer"></div>
-    
+
 </body>
 
 </html>

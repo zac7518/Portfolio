@@ -1,403 +1,520 @@
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-        /* Header styles */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            /* Optional: Add a border at the bottom */
-            z-index: 1000;
-            /* Ensure the header is above other content */
-        }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-        /* Navigation styles */
-        .dropdown-nav ul {
-            list-style: none;
-            text-align: center;
-            /* Center the list items */
-        }
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .dropdown-nav ul li {
-            display: inline-block;
-            position: relative;
-        }
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    /* Optional: Add a border at the bottom */
+    z-index: 1000;
+    /* Ensure the header is above other content */
+}
 
-        .dropdown-nav ul li a {
-            display: block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: black;
-        }
+/* Navigation styles */
+.dropdown-nav ul {
+    list-style: none;
+    text-align: center;
+    /* Center the list items */
+}
 
-        .dropdown-nav ul li:hover>ul {
-            display: block;
-        }
+.dropdown-nav ul li {
+    display: inline-block;
+    position: relative;
+}
 
-        /* Dropdown menu styles */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            z-index: 1;
-            width: 200px;
-            /* Adjust width as needed */
-        }
+.dropdown-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
 
-        .dropdown-menu li {
-            display: block;
-        }
+.dropdown-nav ul li:hover>ul {
+    display: block;
+}
 
-        .dropdown-menu li a {
-            color: black;
-            text-decoration: none;
-        }
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+    /* Adjust width as needed */
+}
 
-        /* Remove background color change on hover */
-        .dropdown-menu li:hover a {
-            background-color: transparent;
-        }
+.dropdown-menu li {
+    display: block;
+}
 
-        /* Footer styles */
-        .footer {
-            background-color: #4E567E;
-            /* Apply the desired color */
-            color: white;
-            padding: 10px;
-            /* Adjust padding as needed */
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            /* Set width to 100% of the viewport */
-            height: 200px;
-            /* Set footer height to 200 pixels */
-            display: flex;
-            flex-direction: column;
-            /* Change to column layout */
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-        }
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+}
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-            width: 100%;
-            /* Ensure the links span the width of the footer */
-            margin-bottom: 10px;
-            /* Adjust margin to create space between images and text */
-        }
+/* Remove background color change on hover */
+.dropdown-menu li:hover a {
+    background-color: transparent;
+}
 
-        .footer-links a {
-            margin: 0 10px;
-            /* Adjust margin between images */
-            display: flex;
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-        }
+/* Footer styles */
+.footer {
+    background-color: #4E567E;
+    /* Apply the desired color */
+    color: white;
+    padding: 10px;
+    /* Adjust padding as needed */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Set width to 100% of the viewport */
+    height: 200px;
+    /* Set footer height to 200 pixels */
+    display: flex;
+    flex-direction: column;
+    /* Change to column layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
 
-        .footer-links a img {
-            width: 30px;
-            /* Set image width to 30 pixels */
-            height: 30px;
-            /* Set image height to 30 pixels */
-        }
+.footer-links {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    width: 100%;
+    /* Ensure the links span the width of the footer */
+    margin-bottom: 10px;
+    /* Adjust margin to create space between images and text */
+}
 
-        .creator-info {
-            text-align: center;
-            /* Align the text to the center */
-            font-size: 15px;
-            /* Adjust the font size as needed */
-            color: white;
-            /* Adjust the color of the text */
-            margin-top: 10px;
-            /* Add margin to push the text lower */
-        }
+.footer-links a {
+    margin: 0 10px;
+    /* Adjust margin between images */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
 
-        .download-button {
-            background-color: blue;
-            /* Blue background color */
-            color: white;
-            /* White text color */
-            padding: 10px 20px;
-            /* Add padding to increase button size */
-            font-size: 16px;
-            /* Increase font size */
-            border: none;
-            /* Remove border */
-            cursor: pointer;
-            /* Change cursor to pointer on hover */
-            border-radius: 5px;
-            /* Add rounded corners */
-            text-decoration: none;
-            /* Remove underline */
-            display: inline-block;
-            /* Display as inline-block element */
-            margin-top: 200px;
-            margin-left: -40px;
-        }
+.footer-links a img {
+    width: 30px;
+    /* Set image width to 30 pixels */
+    height: 30px;
+    /* Set image height to 30 pixels */
+}
 
-        .download-button-tableau {
-            background-color: blue;
-            /* Blue background color */
-            color: white;
-            /* White text color */
-            padding: 10px 20px;
-            /* Add padding to increase button size */
-            font-size: 16px;
-            /* Increase font size */
-            border: none;
-            /* Remove border */
-            cursor: pointer;
-            /* Change cursor to pointer on hover */
-            border-radius: 5px;
-            /* Add rounded corners */
-            text-decoration: none;
-            /* Remove underline */
-            display: inline-block;
-            /* Display as inline-block element */
-            margin-top: 80px;
-            margin-left: -45px;
-        }
+.creator-info {
+    text-align: center;
+    /* Align the text to the center */
+    font-size: 15px;
+    /* Adjust the font size as needed */
+    color: white;
+    /* Adjust the color of the text */
+    margin-top: 10px;
+    /* Add margin to push the text lower */
+}
 
-        .download-button:hover {
-            background-color: darkblue;
-            /* Darker blue color on hover */
-        }
+.download-button {
+    background-color: blue;
+    /* Blue background color */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Add padding to increase button size */
+    font-size: 16px;
+    /* Increase font size */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border-radius: 5px;
+    /* Add rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Display as inline-block element */
+    margin-top: 200px;
+    margin-left: -40px;
+}
 
-        /* Competences styles */
-        .image-container {
-            position: relative;
-            width: 400px;
-            /* Adjust width as needed */
-            height: 400px;
-            /* Adjust height as needed */
-            overflow: hidden;
-            margin: 0 auto;
-            /* Center the container horizontally */
-            left: -50px;
-            /* Adjust the left position as needed */
-        }
+.download-button-tableau {
+    background-color: blue;
+    /* Blue background color */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Add padding to increase button size */
+    font-size: 16px;
+    /* Increase font size */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border-radius: 5px;
+    /* Add rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Display as inline-block element */
+    margin-top: 80px;
+    margin-left: -45px;
+}
 
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            border-radius: 20px;
-            /* Adjust border radius as needed for rounded corners */
-            transition: transform 0.5s ease-in-out;
-        }
+.download-button:hover {
+    background-color: darkblue;
+    /* Darker blue color on hover */
+}
 
-        .slide img {
-            width: 100%;
-            /* Increase the width of the image */
-            height: 100%;
-            /* Increase the height of the image */
-            object-fit: cover;
-        }
+/* Competences styles */
+.image-container {
+    position: relative;
+    width: 400px;
+    /* Adjust width as needed */
+    height: 400px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    margin: 0 auto;
+    /* Center the container horizontally */
+    left: -50px;
+    /* Adjust the left position as needed */
+}
 
-        button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    /* Adjust border radius as needed for rounded corners */
+    transition: transform 0.5s ease-in-out;
+}
 
-        #prevBtn {
-            right: 5px;
-        }
+.slide img {
+    width: 100%;
+    /* Increase the width of the image */
+    height: 100%;
+    /* Increase the height of the image */
+    object-fit: cover;
+}
 
-        #nextBtn {
-            left: 5px;
-        }
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
-        #presentation,
-        #competences {
-            height: auto;
-            /* Laissez l'élément s'adapter à son contenu */
-            min-height: 800px;
-            /* Facultatif : garantir une taille minimale */
-        }
+#presentation,
+#competences {
+    height: auto;
+    /* Laissez l'élément s'adapter à son contenu */
+    min-height: 800px;
+    /* Facultatif : garantir une taille minimale */
+}
 
-        .divmulti {
-            width: 100%;
-            height: 100vh;
-            background: linear-gradient(to bottom right, #C292DE 0%, #67B3E4 40%, #95A3E0 100%);
-            padding: 20px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.divmulti {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #C292DE 0%, #67B3E4 40%, #95A3E0 100%);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .divgris {
-            width: 100%;
-            height: 100vh;
-            background: #ccc;
-            padding: 20px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.divgris {
+    width: 100%;
+    height: 100vh;
+    background: #ddd;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .divbl {
-            width: 100%;
-            height: 100vh;
-            background: #f3f3f3;
-            padding: 20px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.divbl {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .divart {
-            background-color: #f3f3f3;
-            padding: 20px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 100vh;
-        }
+.divart {
+    background-color: #f3f3f3;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
 
-        .sepa {
-            border-top: 1px solid #000000;
-            /* Bord supérieur noir */
-            margin: 0 auto;
-            /* Centrer horizontalement */
-            width: 50%;
-            /* Largeur à 50% */
-        }
+.sepa {
+    border-top: 1px solid #000000;
+    /* Bord supérieur noir */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+    width: 50%;
+    /* Largeur à 50% */
+}
 
-        .titre {
-            font-size: 40px;
-            display: block;
-            margin-bottom: 20px;
-        }
+.titre {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
 
-        .texte {
-            font-size: 20px;
-            line-height: 1.6;
-            font-family: Poppins, sans-serif;
-        }
+.texte {
+    font-size: 20px;
+    line-height: 1.6;
+}
 
-        .titreorga {
-            text-align: center;
-            font-size: 40px;
-            display: block;
-            margin-bottom: 20px;
-        }
+.titreorga {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
 
-        .dbt {
-            display: flex;
-            justify-content: center;
-        }
+.dbt {
+    display: flex;
+    justify-content: center;
+}
 
-        .img {
-            width: 400px;
-        }
+.img {
+    width: 400px;
+}
 
-        .divtxtd {
-            text-align: center;
-            color: #212121;
-            max-width: 600px;
-            margin-left: 200px
-        }
+.divtxtd {
+    text-align: center;
+    color: #212121;
+    max-width: 600px;
+    margin-left: 200px
+}
 
-        .divtxtg {
-            text-align: center;
-            color: #212121;
-            max-width: 600px;
-            margin-right: 200px;
-        }
+.divtxtg {
+    text-align: center;
+    color: #212121;
+    max-width: 600px;
+    margin-right: 200px;
+}
 
-        .imgorga {
-            width: 500px;
-            border-radius: 20px;
-        }
+.divtxtc {
+    text-align: center;
+    color: #212121;
+    max-width: 1000px;
+}
 
-        /* Articles de Veille */
-        .divartdispo {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.imgorga {
+    width: 500px;
+    border-radius: 20px;
+}
 
-        .artseul {
-            width: 300px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            transition: transform 0.3s ease;
-        }
+/* Articles de Veille */
+.divartdispo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        .artseulimg {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-        }
+.artseul {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
 
-        .artseuldispo {
-            padding: 15px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.artseulimg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
-        .arttitre {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #333;
-        }
+.artseuldispo {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .arttexte {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
-        }
+.arttitre {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-        .artauteur {
-            font-size: 13px;
-            font-weight: bold;
-            color: #999;
-            margin-bottom: 20px;
-        }
+.arttexte {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
 
-        .artlien {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+.artauteur {
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.artlien {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Slideshow */
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Styles pour les boutons prev et next */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste pour centrer */
+    width: auto;
+    padding: 16px;
+    color: ccc;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    -webkit-user-select: none; /* Prise en charge pour Safari et iOS */
+    user-select: none;
+}
+
+/* Positionne le bouton prev sur le côté gauche de l'image */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px; /* Bord arrondi à gauche */
+}
+
+/* Positionne le bouton next sur le côté droit de l'image */
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0; /* Bord arrondi à droite */
+}
+
+/* Style pour les boutons au survol */
+.prev:hover,
+.next:hover {
+    background-color: rgba(124, 124, 124, 0.8); /* Change la couleur de fond au survol */
+}
+
+
+/* Style pour la légende (caption) */
+.text {
+    position: absolute;
+    bottom: -35px; /* Abaisse la légende */
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+    margin-top: 20px; /* Ajuste la position verticale des dots */
+    position: relative;
+    bottom: -20px; /* Abaisse les points */
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
