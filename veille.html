@@ -18,15 +18,15 @@
     <!-- Veille -->
     <div class="divbl">
         <div>
-            <img src="images/veille.png" title="veille" style="width:400px">
+            <img src="images/veille.png" title="veille" class="img">
         </div>
-        <div style="text-align: center; color: #212121; max-width: 600px; margin-left: 200px;">
-            <span style="font-size: 40px; display: block; margin-bottom: 20px;">
+        <div class="divtxtd">
+            <span class="titre">
                 Veille
             </span>
-            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
+            <hr class="sepa">
             <br /><br />
-            <span style="font-size: 20px; line-height: 1.6;">
+            <span class="texte">
                 Pour effectuer ma veille technologique, j'utilise "Google Alertes", qui me crée des alertes toutes les
                 semaines.
                 Celui-ci me permet d'être toujours au courant de toutes les actualités que je souhaite.
@@ -38,13 +38,13 @@
 
     <!-- Cloud Computing -->
     <div class="divgris">
-        <div style="text-align: center; color: #212121; max-width: 600px; margin-right: 200px;">
-            <span style="font-size: 40px; display: block; margin-bottom: 20px;">
+        <div class="divtxtg">
+            <span class="titre">
                 Cloud Computing
             </span>
-            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
+            <hr class="sepa">
             <br /><br />
-            <span style="font-size: 20px; line-height: 1.6;">
+            <span class="texte">
                 Le cloud computing, ou informatique en nuage, est un modèle de prestation de services informatiques où
                 les différents services ou ressources
                 (serveurs web, stockage, réseaux, base de données, logiciels, outils analytiques, etc.) sont accessibles
@@ -56,109 +56,97 @@
             </span>
         </div>
         <div>
-            <img src="images/cloud.png" style="width: 400px;" alt="Organigramme GIF">
+            <img src="images/cloud.png" alt="Organigramme GIF" class="img">
         </div>
     </div>
 
     <!-- Mes Articles -->
     <div class="divart">
-        <div id="articlestitre" style="text-align: center; color: #212121; max-width: 600px; margin-bottom: 20px;">
-            <span style="font-size: 40px; display: block; margin-bottom: 20px;">
+        <div>
+            <span class="titre">
                 Mes articles
             </span>
-            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
+            <hr class="sepa">
         </div>
         <br /><br />
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-            <div class="article1"
-                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/azure.png" alt="Article Image"
-                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div
-                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
+        <div class="divartdispo">
+            <div class="artseul">
+                <img src="images/azure.png" alt="Article Image" class="artseulimg">
+                <div class="artseuldispo">
+                    <h2 class="arttitre">
                         Le "cloud" tire les résultats de Microsoft, mais les coûts inquiètent et le cours chute
                     </h2>
-                    <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
+                    <p class="arttexte">
                         Le géant de l'informatique Microsoft a battu les pronostics des analystes lors du premier
                         trimestre de son exercice décalé.
                         Son activité cloud, dopée par l'IA, progresse mieux qu'attendu.
                         Certains s'inquiètent toutefois du coût de développement de ces services.
                     </p>
-                    <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
+                    <p class="artauteur">
                         Auteur: Olivier Samois
                     </p>
                     <a href="https://www.lecho.be/entreprises/tech-science/le-cloud-tire-les-resultats-de-microsoft-mais-les-couts-inquietent-et-le-cours-chute/10571903.html"
-                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                        class="artlien">
                         Lire l'article
                     </a>
                 </div>
             </div>
 
-            <div class="article2"
-                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/gcp.png" alt="Article Image"
-                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div
-                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
+            <div class="artseul">
+                <img src="images/gcp.png" alt="Article Image" class="artseulimg">
+                <div class="artseuldispo">
+                    <h2 class="arttitre">
                         Google en pleine ascension grâce à l'IA et au cloud
                     </h2>
-                    <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
+                    <p class="arttexte">
                         Le groupe Alphabet, maison mère de Google, affiche une croissance spectaculaire au troisième
                         trimestre 2023,
                         portée par des avancées significatives dans le domaine de l'intelligence artificielle et du
                         cloud.
                     </p>
-                    <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
+                    <p class="artauteur">
                         Auteur: Paolo Garoscio
                     </p>
                     <a href="https://www.journaldeleconomie.fr/google-en-pleine-ascension-grace-a-lia-et-au-cloud/"
-                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    class="artlien">
                         Lire l'article
                     </a>
                 </div>
             </div>
 
-            <div class="article2"
-                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/cloud.png" alt="Article Image"
-                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div
-                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
+            <div class="artseul">
+                <img src="images/cloud.png" alt="Article Image" class="artseulimg">
+                <div class="artseuldispo">
+                    <h2 class="arttitre">
                         Titre de l'Article
                     </h2>
-                    <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
+                    <p class="arttexte">
                         Voici un bref aperçu de l'article. C'est un texte qui présente le contenu de l'article.
                     </p>
-                    <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
+                    <p class="artauteur">
                         Auteur: John Doe
                     </p>
                     <a href="#"
-                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    class="artlien">
                         Lire l'article
                     </a>
                 </div>
             </div>
 
-            <div class="article2"
-                style="width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff; transition: transform 0.3s ease; cursor: pointer;">
-                <img src="images/cloud.png" alt="Article Image"
-                    style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div
-                    style="padding: 15px; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">
+            <div class="artseul">
+                <img src="images/cloud.png" alt="Article Image" class="artseulimg">
+                <div class="artseuldispo">
+                    <h2 class="arttitre">
                         Titre de l'Article
                     </h2>
-                    <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
+                    <p class="arttexte">
                         Voici un bref aperçu de l'article. C'est un texte qui présente le contenu de l'article.
                     </p>
-                    <p style="font-size: 13px; font-weight: bold; color: #999; margin-bottom: 20px;">
+                    <p class="artauteur">
                         Auteur: John Doe
                     </p>
                     <a href="#"
-                        style="display: inline-block; padding: 10px 15px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                    class="artlien">
                         Lire l'article
                     </a>
                 </div>

@@ -232,39 +232,6 @@
             left: 5px;
         }
 
-        /* Desk section styles */
-        #Desk {
-            position: relative;
-            text-align: center;
-        }
-
-        #Desk img {
-            max-width: 100%;
-            max-height: 100%;
-            margin-bottom: -5px;
-        }
-
-        #deskimage {
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-        }
-
-        #deskimage span {
-            display: block;
-        }
-
-        #deskimage span:first-of-type {
-            font-size: 70px;
-        }
-
-        #deskimage span:last-of-type {
-            font-size: 35px;
-        }
-
         #presentation,
         #competences {
             height: auto;
@@ -318,11 +285,119 @@
             height: 100vh;
         }
 
-        hr {
+        .sepa {
             border-top: 1px solid #000000;
             /* Bord supérieur noir */
             margin: 0 auto;
             /* Centrer horizontalement */
             width: 50%;
             /* Largeur à 50% */
+        }
+
+        .titre {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .texte {
+            font-size: 20px;
+            line-height: 1.6;
+            font-family: Poppins, sans-serif;
+        }
+
+        .titreorga {
+            text-align: center;
+            font-size: 40px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .dbt {
+            display: flex;
+            justify-content: center;
+        }
+
+        .img {
+            width: 400px;
+        }
+
+        .divtxtd {
+            text-align: center;
+            color: #212121;
+            max-width: 600px;
+            margin-left: 200px
+        }
+
+        .divtxtg {
+            text-align: center;
+            color: #212121;
+            max-width: 600px;
+            margin-right: 200px;
+        }
+
+        .imgorga {
+            width: 500px;
+            border-radius: 20px;
+        }
+
+        /* Articles de Veille */
+        .divartdispo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .artseul {
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .artseulimg {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .artseuldispo {
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .arttitre {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .arttexte {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .artauteur {
+            font-size: 13px;
+            font-weight: bold;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .artlien {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
