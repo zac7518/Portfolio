@@ -78,6 +78,21 @@ body {
     display: block;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 8px;
+    }
+
+    .dropdown-nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .dropdown-menu {
+        width: auto; /* Ajuste la largeur pour mieux s'adapter aux petits écrans */
+    }
+}
+
 /* Footer styles */
 .footer {
     background-color: #4E567E;
