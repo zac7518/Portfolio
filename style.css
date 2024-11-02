@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -11,16 +7,23 @@ body {
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 60px;
+}
+
 /* Header styles */
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: white;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     z-index: 1000; /* Ensure the header is above other content */
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Navigation styles */
@@ -54,7 +57,7 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 1;
-    width: 200px; /* Adjust width as needed */
+    width: 150%; /* Adjust width as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust to center based on width */
 }
@@ -78,18 +81,36 @@ body {
     display: block;
 }
 
-/* Mobile adjustments */
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
     .header {
-        padding: 8px;
+        flex-direction: column; /* Aligne le logo et la nav en colonne */
+        align-items: flex-start; /* Aligne les éléments à gauche */
+        padding: 10px; /* Réduit le padding */
     }
 
-    .dropdown-nav ul li a {
-        padding: 8px 12px;
+    .dropdown-nav {
+        width: 100%; /* S'assure que la navigation prend toute la largeur */
     }
 
-    .dropdown-menu {
-        width: auto; /* Ajuste la largeur pour mieux s'adapter aux petits écrans */
+    .dropdown-nav ul {
+        flex-direction: row; /* Garde le menu horizontal */
+        flex-wrap: wrap; /* Permet aux éléments de se replier */
+        justify-content: flex-start; /* Aligne les éléments à gauche */
+        width: 100%; /* Prend toute la largeur de l'écran */
+    }
+
+    .dropdown-nav ul li {
+        margin-left: 10px; /* Réduit l'espace entre les éléments */
     }
 }
 
