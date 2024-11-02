@@ -20,18 +20,22 @@ body {
     background-color: white;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000;
+    /* Ensure the header is above other content */
 }
 
 /* Navigation styles */
 .dropdown-nav {
-    text-align: center; /* Center the navigation items */
+    text-align: center;
+    /* Center the navigation items */
 }
 
 .dropdown-nav ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
 }
 
 .dropdown-nav ul li {
@@ -54,9 +58,12 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 1;
-    width: 200px; /* Adjust width as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center based on width */
+    width: 200px;
+    /* Adjust width as needed */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust to center based on width */
 }
 
 .dropdown-menu li {
@@ -74,7 +81,7 @@ body {
 }
 
 /* Show dropdown on hover */
-.dropdown-nav ul li:hover > .dropdown-menu {
+.dropdown-nav ul li:hover>.dropdown-menu {
     display: block;
 }
 
@@ -265,15 +272,15 @@ button {
 }
 
 .divart {
+    width: 100%;
+    height: 100vh;
     background-color: #ffffff;
     padding: 20px;
     position: relative;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column;
 }
 
 .sepa {
@@ -421,8 +428,10 @@ button {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%; /* Centre verticalement */
-    transform: translateY(-50%); /* Ajuste pour centrer */
+    top: 50%;
+    /* Centre verticalement */
+    transform: translateY(-50%);
+    /* Ajuste pour centrer */
     width: auto;
     padding: 16px;
     color: ccc;
@@ -430,33 +439,38 @@ button {
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 3px;
-    -webkit-user-select: none; /* Prise en charge pour Safari et iOS */
+    -webkit-user-select: none;
+    /* Prise en charge pour Safari et iOS */
     user-select: none;
 }
 
 /* Positionne le bouton prev sur le côté gauche de l'image */
 .prev {
     left: 0;
-    border-radius: 3px 0 0 3px; /* Bord arrondi à gauche */
+    border-radius: 3px 0 0 3px;
+    /* Bord arrondi à gauche */
 }
 
 /* Positionne le bouton next sur le côté droit de l'image */
 .next {
     right: 0;
-    border-radius: 0 3px 3px 0; /* Bord arrondi à droite */
+    border-radius: 0 3px 3px 0;
+    /* Bord arrondi à droite */
 }
 
 /* Style pour les boutons au survol */
 .prev:hover,
 .next:hover {
-    background-color: rgba(124, 124, 124, 0.8); /* Change la couleur de fond au survol */
+    background-color: rgba(124, 124, 124, 0.8);
+    /* Change la couleur de fond au survol */
 }
 
 
 /* Style pour la légende (caption) */
 .text {
     position: absolute;
-    bottom: -35px; /* Abaisse la légende */
+    bottom: -35px;
+    /* Abaisse la légende */
     width: 100%;
     text-align: center;
     color: white;
@@ -486,9 +500,11 @@ button {
     display: inline-block;
     transition: background-color 0.6s ease;
     text-align: center;
-    margin-top: 20px; /* Ajuste la position verticale des dots */
+    margin-top: 20px;
+    /* Ajuste la position verticale des dots */
     position: relative;
-    bottom: -20px; /* Abaisse les points */
+    bottom: -20px;
+    /* Abaisse les points */
 }
 
 .active,
