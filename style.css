@@ -96,6 +96,8 @@ body {
         flex-direction: column; /* Aligne le logo et la nav en colonne */
         align-items: flex-start; /* Aligne les éléments à gauche */
         padding: 10px; /* Réduit le padding */
+        justify-content: space-between;
+        align-items: center;
     }
 
     .dropdown-nav {
