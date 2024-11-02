@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -21,20 +20,19 @@ body {
     background-color: white;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Navigation styles */
 .dropdown-nav {
-    text-align: center; /* Center the navigation items */
+    text-align: center;
 }
 
 .dropdown-nav ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    padding: 0;
+    margin: 0;
 }
 
 .dropdown-nav ul li {
@@ -49,7 +47,6 @@ body {
     color: black;
 }
 
-/* Center the dropdown menu */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -57,9 +54,9 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 1;
-    width: 150%; /* Adjust width as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center based on width */
+    width: 150%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dropdown-menu li {
@@ -71,17 +68,14 @@ body {
     text-decoration: none;
 }
 
-/* Remove background color change on hover */
 .dropdown-menu li:hover a {
     background-color: transparent;
 }
 
-/* Show dropdown on hover */
 .dropdown-nav ul li:hover > .dropdown-menu {
     display: block;
 }
 
-/* Mobile Menu Toggle Button */
 .menu-toggle {
     display: none;
     font-size: 1.5em;
@@ -90,157 +84,84 @@ body {
     color: white;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Aligne le logo et la nav en colonne */
-        align-items: flex-start; /* Aligne les éléments à gauche */
-        padding: 10px; /* Réduit le padding */
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .dropdown-nav {
-        width: 100%; /* S'assure que la navigation prend toute la largeur */
-    }
-
-    .dropdown-nav ul {
-        flex-direction: row; /* Garde le menu horizontal */
-        flex-wrap: wrap; /* Permet aux éléments de se replier */
-        justify-content: flex-start; /* Aligne les éléments à gauche */
-        width: 100%; /* Prend toute la largeur de l'écran */
-    }
-
-    .dropdown-nav ul li {
-        margin-left: 10px; /* Réduit l'espace entre les éléments */
-    }
-}
-
 /* Footer styles */
 .footer {
     background-color: #4E567E;
-    /* Apply the desired color */
     color: white;
     padding: 10px;
-    /* Adjust padding as needed */
     left: 0;
     bottom: 0;
     width: 100%;
-    /* Set width to 100% of the viewport */
     height: 200px;
-    /* Set footer height to 200 pixels */
     display: flex;
     flex-direction: column;
-    /* Change to column layout */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     width: 100%;
-    /* Ensure the links span the width of the footer */
     margin-bottom: 10px;
-    /* Adjust margin to create space between images and text */
 }
 
 .footer-links a {
     margin: 0 10px;
-    /* Adjust margin between images */
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
 }
 
 .footer-links a img {
     width: 30px;
-    /* Set image width to 30 pixels */
     height: 30px;
-    /* Set image height to 30 pixels */
 }
 
 .creator-info {
     text-align: center;
-    /* Align the text to the center */
     font-size: 15px;
-    /* Adjust the font size as needed */
     color: white;
-    /* Adjust the color of the text */
     margin-top: 10px;
-    /* Add margin to push the text lower */
 }
 
+/* BODY */
 .download-button {
     background-color: blue;
-    /* Blue background color */
-    color: white;
-    /* White text color */
-    padding: 10px 20px;
-    /* Add padding to increase button size */
     font-size: 16px;
-    /* Increase font size */
-    border: none;
-    /* Remove border */
     cursor: pointer;
-    /* Change cursor to pointer on hover */
     border-radius: 5px;
-    /* Add rounded corners */
-    text-decoration: none;
-    /* Remove underline */
-    display: inline-block;
-    /* Display as inline-block element */
     margin-top: 200px;
     margin-left: -40px;
 }
 
 .download-button-tableau {
     background-color: blue;
-    /* Blue background color */
     color: white;
-    /* White text color */
     padding: 10px 20px;
-    /* Add padding to increase button size */
     font-size: 16px;
-    /* Increase font size */
     border: none;
-    /* Remove border */
     cursor: pointer;
-    /* Change cursor to pointer on hover */
     border-radius: 5px;
-    /* Add rounded corners */
     text-decoration: none;
-    /* Remove underline */
     display: inline-block;
-    /* Display as inline-block element */
     margin-top: 80px;
     margin-left: -45px;
 }
 
 .download-button:hover {
     background-color: darkblue;
-    /* Darker blue color on hover */
 }
 
 /* Competences styles */
 .image-container {
     position: relative;
     width: 400px;
-    /* Adjust width as needed */
     height: 400px;
-    /* Adjust height as needed */
     overflow: hidden;
     margin: 0 auto;
-    /* Center the container horizontally */
     left: -50px;
-    /* Adjust the left position as needed */
 }
 
 .slide {
@@ -249,15 +170,12 @@ body {
     height: 100%;
     overflow: hidden;
     border-radius: 20px;
-    /* Adjust border radius as needed for rounded corners */
     transition: transform 0.5s ease-in-out;
 }
 
 .slide img {
     width: 100%;
-    /* Increase the width of the image */
     height: 100%;
-    /* Increase the height of the image */
     object-fit: cover;
 }
 
@@ -275,9 +193,7 @@ button {
 #presentation,
 #competences {
     height: auto;
-    /* Laissez l'élément s'adapter à son contenu */
     min-height: 800px;
-    /* Facultatif : garantir une taille minimale */
 }
 
 .divmulti {
@@ -300,6 +216,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .divart {
@@ -316,11 +233,8 @@ button {
 
 .sepa {
     border-top: 1px solid #000000;
-    /* Bord supérieur noir */
     margin: 0 auto;
-    /* Centrer horizontalement */
     width: 100px;
-    /* Largeur à 50% */
 }
 
 .titre {
@@ -442,25 +356,22 @@ button {
     box-sizing: border-box
 }
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
 
-/* Styles pour les boutons prev et next */
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%; /* Centre verticalement */
-    transform: translateY(-50%); /* Ajuste pour centrer */
+    top: 50%;
+    transform: translateY(-50%);
     width: auto;
     padding: 16px;
     color: ccc;
@@ -468,33 +379,28 @@ button {
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 3px;
-    -webkit-user-select: none; /* Prise en charge pour Safari et iOS */
+    -webkit-user-select: none;
     user-select: none;
 }
 
-/* Positionne le bouton prev sur le côté gauche de l'image */
 .prev {
     left: 0;
-    border-radius: 3px 0 0 3px; /* Bord arrondi à gauche */
+    border-radius: 3px 0 0 3px;
 }
 
-/* Positionne le bouton next sur le côté droit de l'image */
 .next {
     right: 0;
-    border-radius: 0 3px 3px 0; /* Bord arrondi à droite */
+    border-radius: 0 3px 3px 0;
 }
 
-/* Style pour les boutons au survol */
 .prev:hover,
 .next:hover {
-    background-color: rgba(124, 124, 124, 0.8); /* Change la couleur de fond au survol */
+    background-color: rgba(124, 124, 124, 0.8);
 }
 
-
-/* Style pour la légende (caption) */
 .text {
     position: absolute;
-    bottom: -35px; /* Abaisse la légende */
+    bottom: -35px;
     width: 100%;
     text-align: center;
     color: white;
@@ -504,8 +410,6 @@ button {
     background-color: rgba(124, 124, 124, 0.8);
 }
 
-
-/* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -514,7 +418,6 @@ button {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -525,9 +428,9 @@ button {
     display: inline-block;
     transition: background-color 0.6s ease;
     text-align: center;
-    margin-top: 20px; /* Ajuste la position verticale des dots */
+    margin-top: 20px;
     position: relative;
-    bottom: -20px; /* Abaisse les points */
+    bottom: -20px;
 }
 
 .active,
@@ -535,7 +438,6 @@ button {
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -548,5 +450,62 @@ button {
 
     to {
         opacity: 1
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .dropdown-nav {
+        width: 100%;
+    }
+
+    .dropdown-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .dropdown-nav ul li {
+        margin-left: 10px;
+    }
+
+    .divmulti {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divtxtd {
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
+
+    #imagepresentation img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .download-button {
+        margin-top:85%;
+    }
+
+    .divbl {
+        height: auto; 
+        min-height: 100vh; 
+    }
+
+    .texte {
+
     }
 }
