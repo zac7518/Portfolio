@@ -132,26 +132,11 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 200px;
-    margin-left: -40px;
 }
 
-.download-button-tableau {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 80px;
-    margin-left: -45px;
-}
-
-.download-button:hover {
-    background-color: darkblue;
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* Competences styles */
@@ -180,7 +165,6 @@ body {
 }
 
 button {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -503,9 +487,5 @@ button {
     .divbl {
         height: auto; 
         min-height: 100vh; 
-    }
-
-    .texte {
-
     }
 }
