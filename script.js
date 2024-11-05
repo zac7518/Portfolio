@@ -77,3 +77,17 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('content.json')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('presentation-heading').textContent = data.presentation.heading;
+            document.getElementById('presentation-description').textContent = data.presentation.description;
+            document.getElementById('cv-link').href = data.presentation.cv_link;
+            document.getElementById('cv-button-text').textContent = data.presentation.cv_button_text;
+            document.getElementById('competences-heading').textContent = data.competences.heading;
+            document.getElementById('competences-description').textContent = data.competences.description;
+        })
+        .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+});

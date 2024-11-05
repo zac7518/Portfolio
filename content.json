@@ -1,0 +1,12 @@
+{
+    "presentation": {
+        "heading": "A propos de moi",
+        "description": "Je m'appelle Zachary Winkler. Je suis actuellement en BTS SIO (Service informatique aux organisations) spécialité SISR (Solutions infrastructure, systèmes et réseaux). Cette formation me permet d'acquérir des compétences dans la technologie de réseaux et dans l'architecture des ordinateurs, la sécurité des réseaux, les bases de données et la maintenance d'un système d'information dans une entreprise.",
+        "cv_link": "images/CV.pdf",
+        "cv_button_text": "Mon CV"
+    },
+    "competences": {
+        "heading": "Compétences",
+        "description": "Étudiant en apprentissage en systèmes et réseaux informatiques, je développe des compétences en support à l'utilisateur, administration de systèmes, gestion de réseaux, bases de données, et programmation. Mes missions en entreprise m'offrent une immersion concrète dans la configuration et la maintenance d'infrastructures informatiques. Passionné par l'informatique et les nouvelles technologies, je suis motivé à perfectionner mes compétences pour répondre aux besoins de l'entreprise."
+    }
+}
