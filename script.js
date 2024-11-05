@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('cv-button-text').textContent = data.presentation.cv_button_text;
             document.getElementById('competences-heading').textContent = data.competences.heading;
             document.getElementById('competences-description').textContent = data.competences.description;
+            document.getElementById('preentreprise-heading').textContent = data.preentreprise.heading;
+            document.getElementById('preentreprise-description').textContent = data.preentreprise.description;
         })
         .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
-});
+})

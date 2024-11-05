@@ -7,5 +7,9 @@
     "competences": {
         "heading": "Compétences",
         "description": "Étudiant en apprentissage en systèmes et réseaux informatiques, je développe des compétences en support à l'utilisateur, administration de systèmes, gestion de réseaux, bases de données, et programmation. Mes missions en entreprise m'offrent une immersion concrète dans la configuration et la maintenance d'infrastructures informatiques. Passionné par l'informatique et les nouvelles technologies, je suis motivé à perfectionner mes compétences pour répondre aux besoins de l'entreprise."
+    },
+    "preentreprise": {
+        "heading": "Sikiwis",
+        "description": "Sikiwis est une société, fondée en 2009, par un ex-consultant de McKinsey, ex-dirigeant chez Vinci et ancien directeur de la convergence des systèmes d'information et du Web chez Veolia Environnement. Après neuf ans de recherche & développement et d'implantations terrain en continu, Sikiwis accompagne les organisations dans leur transformation digitale via une plateforme révolutionnaire, la première usine digitale zéro code Digitalizr."
     }
 }
