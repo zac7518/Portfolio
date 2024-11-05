@@ -8,5 +8,9 @@
     "competences": {
         "heading": "Compétences",
         "description": "Étudiant en apprentissage en systèmes et réseaux informatiques, je développe des compétences en support à l'utilisateur, administration de systèmes, gestion de réseaux, bases de données, et programmation. Mes missions en entreprise m'offrent une immersion concrète dans la configuration et la maintenance d'infrastructures informatiques. Passionné par l'informatique et les nouvelles technologies, je suis motivé à perfectionner mes compétences pour répondre aux besoins de l'entreprise."
+    },
+    "preentreprise": {
+        "heading": "Activités",
+        "description": "Les activités de la société Sikiwis comprennent un panel de services complets, consistant principalement en l'accompagnement des entreprises dans la digitalisation de leurs procédés. L'édition de suites de logiciels de type ERP, permettant la manipulation de grands ensembles de données sur une plateforme ergonomique et designée sur mesure, est essentiel pour de grands groupes."
     }
 }
