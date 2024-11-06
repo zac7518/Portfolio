@@ -437,11 +437,34 @@ button {
 @media (max-width: 768px) {
 
     /* Header */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: white;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        z-index: 1000;
+        justify-content: center; /* Centre les éléments horizontalement */
+        align-items: center;
+        display: flex;
+    }
+
+    .dropdown-menu {
+        max-width: 100%; /* Limite la largeur du menu déroulant */
+        width: auto; /* S'ajuste à la taille de son contenu */
+    }
+
     .dropdown-nav ul {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 100%;
+        width: 100vw;
+    }
+
+    .dropdown-nav ul li {
+        position: relative; /* Nécessaire pour positionner le menu déroulant correctement */
     }
 
     .dropdown-nav ul li a {
