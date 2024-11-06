@@ -11,7 +11,7 @@ body {
     padding-top: 60px;
 }
 
-/* Header styles */
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -84,7 +84,7 @@ body {
     color: white;
 }
 
-/* Footer styles */
+/* Footer */
 .footer {
     background-color: #4E567E;
     color: white;
@@ -139,7 +139,7 @@ body {
     justify-content: center;
 }
 
-/* Competences styles */
+/* Competences */
 .image-container {
     position: relative;
     width: 400px;
@@ -212,7 +212,8 @@ button {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .sepa {
@@ -336,10 +337,6 @@ button {
 }
 
 /* Slideshow */
-* {
-    box-sizing: border-box
-}
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -438,16 +435,8 @@ button {
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
 
-    .dropdown-nav {
-        width: 100%;
-    }
-
+    /* Header */
     .dropdown-nav ul {
         flex-direction: row;
         flex-wrap: wrap;
@@ -455,8 +444,25 @@ button {
         width: 100%;
     }
 
-    .dropdown-nav ul li {
-        margin-left: 10px;
+    .dropdown-nav ul li a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        height: 100px;
+        padding: 10px 0;
+    }
+
+    .footer-links a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .creator-info {
+        font-size: 12px;
     }
 
     .divmulti {
@@ -465,27 +471,67 @@ button {
         justify-content: center;
     }
 
+    /* Elements */
+
     .divtxtd {
         text-align: center;
-        justify-content: center;
         max-width: 100%;
         width: 100%;
         margin-left: 0;
-        margin-left: 0 !important;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
-    #imagepresentation img {
+    .divtxtg {
+        text-align: center;
         max-width: 100%;
-        height: auto;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
     }
 
-    .download-button {
-        margin-top:85%;
+    .divtxtc {
+        max-width: 100%; /* Limite la largeur pour ne pas déborder */
+        padding: 10px; /* Ajoute de l'espace autour du texte */
+        word-wrap: break-word; /* Coupe les mots longs s'ils dépassent */
+        margin: 0 auto; /* Centre la div */
+        text-align: center; /* Centre le texte */
     }
 
     .divbl {
         height: auto; 
         min-height: 100vh; 
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #imagepresentation img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .slideshow-container {
+        max-width: 100%; /* Empêche le débordement */
+        box-sizing: border-box; /* Inclut le padding dans la largeur */
+    }
+
+    img {
+        max-width: 80%;
+        height: auto; /* La hauteur est ajustée automatiquement */
+        display: block; /* Assure que l'image est un bloc */
+        margin: 0 auto; /* Centre l'image horizontalement */
+    }
+
+    .titre {
+        font-size: 24px;
+    }
+
+    .texte {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .download-button {
+        margin-top: 20px;
+        font-size: 14px;
     }
 }
