@@ -183,12 +183,23 @@ button {
 .divmulti {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, #C292DE 0%, #67B3E4 40%, #95A3E0 100%);
+    background: linear-gradient(to bottom right, #758147 0%, #696f57 40%, #6f615b 100%);
     padding: 20px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.divblan {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 700px; 
+    height: 600px; 
+    background-color: white; 
+    padding:50px; 
+    text-align: center;
 }
 
 .divbl {
