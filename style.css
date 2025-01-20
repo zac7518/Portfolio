@@ -183,7 +183,7 @@ button {
 .divmulti {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, #758147 0%, #696f57 40%, #6f615b 100%);
+    background-image: linear-gradient(25deg, #3a6c84, #74919f, #abb8bb, #e2e0d7);
     padding: 20px;
     position: relative;
     display: flex;
