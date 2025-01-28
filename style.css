@@ -72,7 +72,7 @@ body {
     background-color: transparent;
 }
 
-.dropdown-nav ul li:hover > .dropdown-menu {
+.dropdown-nav ul li:hover>.dropdown-menu {
     display: block;
 }
 
@@ -192,13 +192,13 @@ button {
 }
 
 .divblan {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 700px; 
-    height: 600px; 
-    background-color: rgb(255, 255, 255); 
-    padding:50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
     text-align: center;
 }
 
@@ -364,9 +364,11 @@ button {
 }
 
 .mySlides img {
-    width: 50%; /* Prend la largeur du conteneur */
+    width: 50%;
+    /* Prend la largeur du conteneur */
     height: 300px;
-    object-fit: contain; /* Contient l'image sans déborder */
+    object-fit: contain;
+    /* Contient l'image sans déborder */
 }
 
 .prev,
@@ -446,6 +448,85 @@ button {
     animation-duration: 1.5s;
 }
 
+/* Situations */
+.situations {
+    display: flex;
+    text-align: center;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-top {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-bottom {
+    flex: 1;
+    display: flex;
+}
+
+.left-column-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-inner-top,
+.left-inner-bottom {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-column-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-inner-top,
+.right-inner-bottom {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px; /* Définir une largeur fixe */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
 @keyframes fade {
     from {
         opacity: .4
@@ -468,14 +549,17 @@ button {
         padding: 10px;
         border-bottom: 1px solid #ccc;
         z-index: 1000;
-        justify-content: center; /* Centre les éléments horizontalement */
+        justify-content: center;
+        /* Centre les éléments horizontalement */
         align-items: center;
         display: flex;
     }
 
     .dropdown-menu {
-        max-width: 100%; /* Limite la largeur du menu déroulant */
-        width: auto; /* S'ajuste à la taille de son contenu */
+        max-width: 100%;
+        /* Limite la largeur du menu déroulant */
+        width: auto;
+        /* S'ajuste à la taille de son contenu */
     }
 
     .dropdown-nav ul {
@@ -486,7 +570,8 @@ button {
     }
 
     .dropdown-nav ul li {
-        position: relative; /* Nécessaire pour positionner le menu déroulant correctement */
+        position: relative;
+        /* Nécessaire pour positionner le menu déroulant correctement */
     }
 
     .dropdown-nav ul li a {
@@ -534,16 +619,21 @@ button {
     }
 
     .divtxtc {
-        max-width: 100%; /* Limite la largeur pour ne pas déborder */
-        padding: 10px; /* Ajoute de l'espace autour du texte */
-        word-wrap: break-word; /* Coupe les mots longs s'ils dépassent */
-        margin: 0 auto; /* Centre la div */
-        text-align: center; /* Centre le texte */
+        max-width: 100%;
+        /* Limite la largeur pour ne pas déborder */
+        padding: 10px;
+        /* Ajoute de l'espace autour du texte */
+        word-wrap: break-word;
+        /* Coupe les mots longs s'ils dépassent */
+        margin: 0 auto;
+        /* Centre la div */
+        text-align: center;
+        /* Centre le texte */
     }
 
     .divbl {
-        height: auto; 
-        min-height: 100vh; 
+        height: auto;
+        min-height: 100vh;
         padding: 10px;
         flex-direction: column;
     }
@@ -554,21 +644,28 @@ button {
     }
 
     .slideshow-container {
-        max-width: 100%; /* Empêche le débordement */
-        box-sizing: border-box; /* Inclut le padding dans la largeur */
+        max-width: 100%;
+        /* Empêche le débordement */
+        box-sizing: border-box;
+        /* Inclut le padding dans la largeur */
     }
 
     .mySlides img {
-        width: 50%; /* Prend la largeur du conteneur */
+        width: 50%;
+        /* Prend la largeur du conteneur */
         height: 200px;
-        object-fit: contain; /* Contient l'image sans déborder */
+        object-fit: contain;
+        /* Contient l'image sans déborder */
     }
 
     img {
         max-width: 80%;
-        height: auto; /* La hauteur est ajustée automatiquement */
-        display: block; /* Assure que l'image est un bloc */
-        margin: 0 auto; /* Centre l'image horizontalement */
+        height: auto;
+        /* La hauteur est ajustée automatiquement */
+        display: block;
+        /* Assure que l'image est un bloc */
+        margin: 0 auto;
+        /* Centre l'image horizontalement */
     }
 
     .titre {
