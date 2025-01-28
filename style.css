@@ -139,7 +139,6 @@ body {
     justify-content: center;
 }
 
-/* Competences */
 .image-container {
     position: relative;
     width: 400px;
@@ -537,6 +536,7 @@ button {
     }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
 
     /* Header */
