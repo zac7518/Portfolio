@@ -282,6 +282,11 @@ button {
     width: 400px;
 }
 
+.imgrgpd {
+    width: 400px;
+    border-radius:20px;
+}
+
 .divtxtd {
     text-align: center;
     color: #212121;
