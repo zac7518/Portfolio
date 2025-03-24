@@ -566,7 +566,7 @@ button {
 /* VEILLE */
 /* Outils de veille */
 
-.fonds_outils_veille {
+.veille_outils_fonds {
     background-color: #ffffff;
     padding: 20px;
     position: relative;
@@ -579,7 +579,7 @@ button {
     overflow: hidden;
 }
 
-.outils_veille_titre {
+.veille_outils_titre {
     font-size: 40px;
     display: block;
     margin-bottom: 20px;
@@ -587,11 +587,11 @@ button {
     text-align: center;
 }
 
-.outils_veille_categorie_fonds {
+.veille_outils_categorie_fonds {
     display : flex;
 }
 
-.outils_veille_categorie {
+.veille_outils_categorie {
     margin: 20px;
     padding: 20px;
     width: 400px;
@@ -606,7 +606,7 @@ button {
     align-items: center; /* Centrer verticalement les éléments */
 }
 
-.outils_veille_categorie_image {
+.veille_outils_categorie_image {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -614,7 +614,7 @@ button {
     margin : 20px;
 }
 
-.outils_veille_categorie_texte {
+.veille_outils_categorie_texte {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -622,7 +622,7 @@ button {
     
 }
 
-.outils_veille_categorie_image {
+.veille_outils_categorie_image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -630,18 +630,18 @@ button {
     
 }
 
-.outils_veille_categorie_texte_titre {
+.veille_outils_categorie_texte_titre {
     font-weight: bold;
 }
 
-.outils_veille_categorie_texte_paragraphe {
+.veille_outils_categorie_texte_paragraphe {
     text-align: justify;
     text-align-last: center;
     font-size: 80%;
     padding: 5%;
 }
 
-.outils_veille_categorie_image_web {
+.veille_outils_categorie_image_web {
     width : 100px;
     height : 100px;
 }
