@@ -498,6 +498,1259 @@ button {
     }
 }
 
+/* APPRENTI */
+
+/* Présentation */
+
+.apprenti_presentation_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.apprenti_presentation_image {
+    width: 100%;
+    margin-left: -100%;
+}
+
+.apprenti_presentation_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.apprenti_presentation_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.apprenti_presentation_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.apprenti_presentation_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+/* ENTREPRISE */
+
+/* Présentation */
+
+.entreprise_presentation_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.entreprise_presentation_image {
+    width: 100%;
+    margin-left: -100%;
+}
+
+.entreprise_presentation_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.entreprise_presentation_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.entreprise_presentation_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.entreprise_presentation_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+/* Activités */
+
+.entreprise_activites_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.entreprise_activites_image {
+    margin-left: 20%;
+}
+
+.entreprise_activites_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.entreprise_activites_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.entreprise_activites_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.entreprise_activites_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+/* Organigramme */
+
+.entreprise_organigramme_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.entreprise_organigramme_image {
+    margin-right: 10%;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.entreprise_organigramme_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.entreprise_organigramme_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.entreprise_organigramme_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.entreprise_organigramme_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+/* TABLEAU DE SYNTHESE */
+
+.tableau_fonds {
+    height: 100vh;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.tableau_texte_titre {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.tableau_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+    margin-bottom: 50px;
+}
+
+.tableau_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* MISSIONS FORMATION */
+
+/* Mission formation 1 */
+
+.mission_formation_un_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_un_image {
+    width: 100%;
+    margin-left: -50%;
+}
+
+.mission_formation_un_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_un_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_formation_un_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_un_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_formation_un_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 2 */
+
+.mission_formation_deux_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_deux_image {
+    margin-left: 10%;
+}
+
+.mission_formation_deux_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_deux_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_formation_deux_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_deux_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_formation_deux_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 3 */
+
+.mission_formation_trois_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_trois_image {
+    margin-right: 10%;
+    width: 30%;
+}
+
+.mission_formation_trois_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_trois_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_formation_trois_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_trois_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_formation_trois_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 4 */
+
+.mission_formation_quatre_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_quatre_image {
+    width: 50%;
+}
+
+.mission_formation_quatre_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_quatre_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 120%;
+    display: block;
+    font-weight: bold;
+}
+
+.mission_formation_quatre_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_quatre_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.mission_formation_quatre_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 5 */
+
+.mission_formation_cinq_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_cinq_image {
+    margin-right: 10%;
+    width: 70%;
+}
+
+.mission_formation_cinq_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_cinq_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_formation_cinq_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_cinq_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_formation_cinq_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 6 */
+
+.mission_formation_six_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_six_image {
+    width: 80%;
+    margin-left: 150px;
+}
+
+.mission_formation_six_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_six_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 120%;
+    display: block;
+    font-weight: bold;
+}
+
+.mission_formation_six_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_six_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.mission_formation_six_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 7 */
+
+.mission_formation_sept_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_sept_image {
+    margin-right: 10%;
+    width: 70%;
+}
+
+.mission_formation_sept_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_sept_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_formation_sept_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_sept_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_formation_sept_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission formation 8 */
+
+.mission_formation_huit_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_formation_huit_image {
+    width: 60%;
+    margin-right: 300px;
+}
+
+.mission_formation_huit_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_formation_huit_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 120%;
+    display: block;
+    font-weight: bold;
+}
+
+.mission_formation_huit_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_formation_huit_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.mission_formation_huit_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* MISSIONS ENTREPRISES */
+
+/* Mission entreprise 1 */
+
+.mission_entreprise_un_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_un_image {
+    margin-right: 10%;
+}
+
+.mission_entreprise_un_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_un_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_entreprise_un_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_un_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_entreprise_un_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 2 */
+
+.mission_entreprise_deux_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_deux_image {
+    margin-left: 10%;
+}
+
+.mission_entreprise_deux_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_deux_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_entreprise_deux_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_deux_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_entreprise_deux_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 3 */
+
+.mission_entreprise_trois_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_trois_image {
+    margin-right: 10%;
+    width: 30%;
+}
+
+.mission_entreprise_trois_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_trois_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_entreprise_trois_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_trois_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_entreprise_trois_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 4 */
+
+.mission_entreprise_quatre_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_quatre_image {
+    width: 50%;
+}
+
+.mission_entreprise_quatre_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_quatre_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 120%;
+    display: block;
+    font-weight: bold;
+}
+
+.mission_entreprise_quatre_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_quatre_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.mission_entreprise_quatre_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 5 */
+
+.mission_entreprise_cinq_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_cinq_image {
+    margin-right: 10%;
+    width: 70%;
+}
+
+.mission_entreprise_cinq_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_cinq_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_entreprise_cinq_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_cinq_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_entreprise_cinq_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 6 */
+
+.mission_entreprise_six_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_six_image {
+    width: 80%;
+    margin-left: 150px;
+}
+
+.mission_entreprise_six_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_six_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 120%;
+    display: block;
+    font-weight: bold;
+}
+
+.mission_entreprise_six_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_six_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.mission_entreprise_six_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 7 */
+
+.mission_entreprise_sept_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_sept_image {
+    margin-right: 10%;
+    width: 70%;
+}
+
+.mission_entreprise_sept_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_sept_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.mission_entreprise_sept_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_sept_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.mission_entreprise_sept_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Mission entreprise 8 */
+
+.mission_entreprise_huit_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mission_entreprise_huit_image {
+    width: 60%;
+    margin-right: 300px;
+}
+
+.mission_entreprise_huit_texte {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.mission_entreprise_huit_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    width: 120%;
+    display: block;
+    font-weight: bold;
+}
+
+.mission_entreprise_huit_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.mission_entreprise_huit_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.mission_entreprise_huit_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* CERTIFICAT */
+
+/* RGPD */
+
+.certificat_rgpd_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.certificat_rgpd_image {
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 5%;
+}
+
+.certificat_rgpd_texte_titre {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.certificat_rgpd_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 800px;
+}
+
+.certificat_rgpd_bouton {
+    background-color: blue;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+/* Cisco */
+
+.certificat_cisco_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.certificat_cisco_bouton {
+    background-color: blue;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+.certificat_cisco_image {
+    width: 50%;
+    margin-right: 50%;
+}
+
+.certificat_cisco_texte_titre {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.certificat_cisco_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 800px;
+}
+
 /* SITUATIONS */
 
 /* Situation 1 */
@@ -575,87 +1828,6 @@ button {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-}
-
-/* CERTIFICAT */
-
-/* RGPD */
-
-.certificat_rgpd_fonds {
-    height: 600px;
-    background: #ffffff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-}
-
-.certificat_rgpd_bouton {
-    background-color: blue;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 5%;
-}
-
-.certificat_rgpd_image {
-    width: 50%;
-    margin-left: 20%;
-    border-radius: 5%;
-}
-
-.certificat_rgpd_texte_titre {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 5%;
-    font-weight: bold;
-}
-
-.certificat_rgpd_texte_paragraphe {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 800px;
-}
-
-/* Cisco */
-
-.certificat_cisco_fonds {
-    height: 600px;
-    background: #ffffff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-}
-
-.certificat_cisco_bouton {
-    background-color: blue;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 5%;
-}
-
-.certificat_cisco_image {
-    width: 50%;
-    margin-right: 50%;
-}
-
-.certificat_cisco_texte_titre {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 5%;
-    font-weight: bold;
-}
-
-.certificat_cisco_texte_paragraphe {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 800px;
 }
 
 /* SITUATIONS */
