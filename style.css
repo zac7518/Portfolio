@@ -84,8 +84,8 @@ body {
 }
 
 .menu-toggle {
-    display: none;
     font-size: 1.5em;
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -107,7 +107,7 @@ body {
     align-items: center;
 }
 
-.footer-links {
+.footer_liens {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,19 +115,19 @@ body {
     margin-bottom: 10px;
 }
 
-.footer-links a {
+.footer_liens a {
     margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-links a img {
+.footer_liens a img {
     width: 30px;
     height: 30px;
 }
 
-.creator-info {
+.footer_nom {
     text-align: center;
     font-size: 15px;
     color: white;
