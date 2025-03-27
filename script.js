@@ -1,11 +1,13 @@
-// Header
+// HEADER
+
 fetch('header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('header').innerHTML = data;
     });
 
-// Footer
+// FOOTER
+
 fetch('footer.html')
     .then(response => response.text())
     .then(data => {
@@ -13,6 +15,7 @@ fetch('footer.html')
     });
 
 // JSON
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('content.json')
         .then(response => response.json())

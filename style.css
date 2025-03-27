@@ -141,50 +141,50 @@ body {
 .index_presentation_fonds {
     width: 100%;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    height: auto; 
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
 }
 
 .index_presentation_fonds_gauche {
-    width: 50%; 
+    width: 50%;
 }
 
 .index_presentation_fonds_droite {
-    position: relative; 
+    position: relative;
     width: 50%;
 }
 
 .index_presentation_fonds_gauche img {
-    width: 100%; 
+    width: 100%;
     height: 100vh;
 }
 
 .index_presentation_fonds_droite img {
-    width: 100%; 
-    height: 100vh; 
+    width: 100%;
+    height: 100vh;
 }
 
 .index_presentation_fonds_droite_form {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 10; 
-    background-color: rgba(255, 255, 255, 0.9);  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    width: 70%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
     height: 60%;
 }
 
 .index_presentation_fonds_droite_form_texte {
-    margin-top: 12%;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -194,18 +194,17 @@ body {
     font-weight: bold;
 }
 
+.index_presentation_fonds_droite_form_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
 .index_presentation_fonds_droite_form_texte_paragraphe {
     font-size: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
     line-height: 1.6;
-    width: 100%;
-}
-
-.index_presentation_fonds_droite_form_texte_separation {
-    border-top: 1px solid #000000;
-    margin: 0 auto;
-    width: 20%;
 }
 
 .index_presentation_fonds_droite_form_bouton {
@@ -251,7 +250,7 @@ body {
 .index_competences_texte_titre {
     font-size: 40px;
     margin-top: 5%;
-    margin-bottom: 3%;;
+    margin-bottom: 3%;
     font-weight: bold;
 }
 
@@ -271,12 +270,12 @@ body {
 
 .index_competences_carousel_track {
     display: flex;
-    animation: scroll 30s linear infinite; 
-    animation-play-state: running; 
+    animation: scroll 30s linear infinite;
+    animation-play-state: running;
 }
 
 .index_competences_carousel_track:hover {
-    animation-play-state: paused; 
+    animation-play-state: paused;
 }
 
 .index_competences_carousel_track div {
@@ -288,6 +287,7 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -521,7 +521,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -579,7 +579,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -637,7 +637,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -694,7 +694,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -753,7 +753,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -811,7 +811,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -879,7 +879,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -936,7 +936,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -998,7 +998,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1055,7 +1055,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1113,7 +1113,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1171,7 +1171,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1231,7 +1231,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1289,7 +1289,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1349,7 +1349,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1407,7 +1407,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
