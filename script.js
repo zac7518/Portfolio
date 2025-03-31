@@ -31,3 +31,41 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
 })
 
+// INDEX
+// Présentation
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.index_presentation_fonds_gauche_image');
+        presentationText.classList.add('visible');
+    }, 1000); // Délai
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_texte_titre');
+        presentationText.classList.add('visible');
+    }, 2000); // Délai
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_texte_separation');
+        presentationText.classList.add('visible');
+    }, 3000); // Délai
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_texte_paragraphe');
+        presentationText.classList.add('visible');
+    }, 4000); // Délai
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_bouton');
+        presentationText.classList.add('visible');
+    }, 6000); // Délai
+});
+

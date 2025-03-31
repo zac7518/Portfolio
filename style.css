@@ -174,7 +174,12 @@ body {
     top: 1%;
     left : 1%;
     width: 35%;
-    height: 10%;
+    opacity: 0; /* Initialement caché */
+    transition: opacity 1s ease-in-out; /* Transition pour l'effet d'apparition */
+}
+
+.index_presentation_fonds_gauche_image.visible {
+    opacity: 1; /* Visible après l'animation */
 }
 
 .index_presentation_fonds_droite_form {
@@ -206,12 +211,24 @@ body {
     font-size: 40px;
     margin-bottom: 5%;
     font-weight: bold;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.index_presentation_fonds_droite_form_texte_titre.visible {
+    opacity: 1; 
 }
 
 .index_presentation_fonds_droite_form_texte_separation {
     border-top: 1px solid #000000;
     margin: 0 auto;
     width: 20%;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.index_presentation_fonds_droite_form_texte_separation.visible {
+    opacity: 1; 
 }
 
 .index_presentation_fonds_droite_form_texte_paragraphe {
@@ -219,6 +236,12 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
     line-height: 1.6;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.index_presentation_fonds_droite_form_texte_paragraphe.visible {
+    opacity: 1; 
 }
 
 .index_presentation_fonds_droite_form_bouton {
@@ -229,6 +252,12 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     cursor: pointer;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.index_presentation_fonds_droite_form_bouton.visible {
+    opacity: 1; 
 }
 
 /* Compétences */
