@@ -146,43 +146,14 @@ body {
 
 /* Présentation */
 
-.index_presentation_fonds {
+.index_presentation_fonds img {
     display: flex;
-}
-
-.index_presentation_fonds_gauche {
-    width: 50%;
-}
-
-.index_presentation_fonds_droite {
     position: relative;
-    width: 50%;
-}
-
-.index_presentation_fonds_gauche img {
-    width: 100%;
     height: 100vh;
-}
-
-.index_presentation_fonds_droite img {
     width: 100%;
-    height: 100vh;
 }
 
-.index_presentation_fonds_gauche_image {
-    position: absolute;
-    top: 1%;
-    left : 1%;
-    width: 35%;
-    opacity: 0; /* Initialement caché */
-    transition: opacity 1s ease-in-out; /* Transition pour l'effet d'apparition */
-}
-
-.index_presentation_fonds_gauche_image.visible {
-    opacity: 1; /* Visible après l'animation */
-}
-
-.index_presentation_fonds_droite_form {
+.index_presentation_fonds_form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -192,11 +163,17 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 70%;
+    width: 40%;
     height: 60%;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
 }
 
-.index_presentation_fonds_droite_form_texte {
+.index_presentation_fonds_form.visible {
+    opacity: 1; 
+}
+
+.index_presentation_fonds_form_texte {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -205,9 +182,10 @@ body {
     text-align: center;
     height: 100%;
     width: 100%;
+    padding: 2%;
 }
 
-.index_presentation_fonds_droite_form_texte_titre {
+.index_presentation_fonds_form_texte_titre {
     font-size: 40px;
     margin-bottom: 5%;
     font-weight: bold;
@@ -215,23 +193,23 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.index_presentation_fonds_droite_form_texte_titre.visible {
+.index_presentation_fonds_form_texte_titre.visible {
     opacity: 1; 
 }
 
-.index_presentation_fonds_droite_form_texte_separation {
+.index_presentation_fonds_form_texte_separation {
     border-top: 1px solid #000000;
     margin: 0 auto;
-    width: 20%;
+    width: 10%;
     opacity: 0; 
     transition: opacity 1s ease-in-out; 
 }
 
-.index_presentation_fonds_droite_form_texte_separation.visible {
+.index_presentation_fonds_form_texte_separation.visible {
     opacity: 1; 
 }
 
-.index_presentation_fonds_droite_form_texte_paragraphe {
+.index_presentation_fonds_form_texte_paragraphe {
     font-size: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -240,11 +218,11 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.index_presentation_fonds_droite_form_texte_paragraphe.visible {
+.index_presentation_fonds_form_texte_paragraphe.visible {
     opacity: 1; 
 }
 
-.index_presentation_fonds_droite_form_bouton {
+.index_presentation_fonds_form_bouton {
     padding: 15px;
     border-radius: 5px;
     background-color: #007bff;
@@ -256,7 +234,7 @@ body {
     transition: opacity 1s ease-in-out; 
 }
 
-.index_presentation_fonds_droite_form_bouton.visible {
+.index_presentation_fonds_form_bouton.visible {
     opacity: 1; 
 }
 
@@ -295,6 +273,14 @@ body {
     margin-top: 5%;
     margin-bottom: 3%;
     font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px); /* Décale légèrement vers le bas avant l'apparition */
+}
+
+.index_competences_texte_titre.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 5s ease, transform 1s ease;
 }
 
 .index_competences_texte_separation {
@@ -340,7 +326,101 @@ body {
 
 /* Présentation */
 
-.entreprise_presentation_fonds {
+.entreprise_presentation_fonds img {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.entreprise_presentation_fonds_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 60%;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.entreprise_presentation_fonds_form.visible {
+    opacity: 1; 
+}
+
+.entreprise_presentation_fonds_form_texte {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+
+.entreprise_presentation_fonds_form_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.entreprise_presentation_fonds_form_texte_titre.visible {
+    opacity: 1; 
+}
+
+.entreprise_presentation_fonds_form_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 10%;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.entreprise_presentation_fonds_form_texte_separation.visible {
+    opacity: 1; 
+}
+
+.entreprise_presentation_fonds_form_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.6;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.entreprise_presentation_fonds_form_texte_paragraphe.visible {
+    opacity: 1; 
+}
+
+.entreprise_presentation_fonds_form_bouton {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.entreprise_presentation_fonds_form_bouton.visible {
+    opacity: 1; 
+}
+
+/* Société */
+
+.entreprise_societe_fonds {
     height: 600px;
     background: #ffffff;
     position: relative;
@@ -351,20 +431,20 @@ body {
     text-align: center;
 }
 
-.entreprise_presentation_image_fonds {
+.entreprise_societe_image_fonds {
     width: 50%;
 }
 
-.entreprise_presentation_image {
+.entreprise_societe_image {
     width: 40%;
     margin-left: 20%;
 }
 
-.entreprise_presentation_texte_fonds {
+.entreprise_societe_texte_fonds {
     width: 50%;
 }
 
-.entreprise_presentation_texte {
+.entreprise_societe_texte {
     width: 50%;
     margin-left: 10%;
     display: flex;
@@ -372,19 +452,19 @@ body {
     align-items: center;
 }
 
-.entreprise_presentation_texte_titre {
+.entreprise_societe_texte_titre {
     font-size: 40px;
     margin-bottom: 5%;
     font-weight: bold;
 }
 
-.entreprise_presentation_texte_separation {
+.entreprise_societe_texte_separation {
     border-top: 1px solid #000000;
     margin: 0 auto;
     width: 20%;
 }
 
-.entreprise_presentation_texte_paragraphe {
+.entreprise_societe_texte_paragraphe {
     font-size: 20px;
     margin-top: 5%;
     margin-bottom: 10%;

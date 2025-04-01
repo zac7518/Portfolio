@@ -1,19 +1,3 @@
-// HEADER
-
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    });
-
-// FOOTER
-
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer').innerHTML = data;
-    });
-
 // JSON
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,41 +15,119 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
 })
 
+// HEADER
+
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
+
+// FOOTER
+
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });
+
 // INDEX
+
 // Présentation
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        const presentationText = document.querySelector('.index_presentation_fonds_gauche_image');
+        const presentationText = document.querySelector('.index_presentation_fonds_form');
         presentationText.classList.add('visible');
-    }, 1000); // Délai
+    }, 1000); 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_texte_titre');
+        const presentationText = document.querySelector('.index_presentation_fonds_form_texte_titre');
         presentationText.classList.add('visible');
-    }, 2000); // Délai
+    }, 2000); 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_texte_separation');
+        const presentationText = document.querySelector('.index_presentation_fonds_form_texte_separation');
         presentationText.classList.add('visible');
-    }, 3000); // Délai
+    }, 3000); 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_texte_paragraphe');
+        const presentationText = document.querySelector('.index_presentation_fonds_form_texte_paragraphe');
         presentationText.classList.add('visible');
-    }, 4000); // Délai
+    }, 4000); 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        const presentationText = document.querySelector('.index_presentation_fonds_droite_form_bouton');
+        const presentationText = document.querySelector('.index_presentation_fonds_form_bouton');
         presentationText.classList.add('visible');
-    }, 6000); // Délai
+    }, 6000); 
 });
 
+// Compétences
+
+function observeVisibility(selector) {
+    const elements = document.querySelectorAll(selector);
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); 
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, {
+        threshold: 1 
+    });
+
+    elements.forEach((element) => observer.observe(element));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    observeVisibility('.index_competences_texte_titre');
+});
+
+// ENTREPRISE
+
+// Présentation
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.entreprise_presentation_fonds_form');
+        presentationText.classList.add('visible');
+    }, 1000); 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.entreprise_presentation_fonds_form_texte_titre');
+        presentationText.classList.add('visible');
+    }, 2000); 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.entreprise_presentation_fonds_form_texte_separation');
+        presentationText.classList.add('visible');
+    }, 3000); 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.entreprise_presentation_fonds_form_texte_paragraphe');
+        presentationText.classList.add('visible');
+    }, 4000); 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const presentationText = document.querySelector('.entreprise_presentation_fonds_form_bouton');
+        presentationText.classList.add('visible');
+    }, 6000); 
+});
