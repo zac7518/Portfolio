@@ -274,7 +274,7 @@ body {
     margin-bottom: 3%;
     font-weight: bold;
     opacity: 0;
-    transform: translateY(20px); /* Décale légèrement vers le bas avant l'apparition */
+    transform: translateY(20px); 
 }
 
 .index_competences_texte_titre.visible {
@@ -624,6 +624,7 @@ body {
 
 .mission_formation_1_fonds {
     height: 600px;
+    width: 100%;
     background: #ffffff;
     position: relative;
     display: flex;
@@ -633,13 +634,23 @@ body {
     text-align: center;
 }
 
-.mission_formation_1_image {
-    width: 100%;
-    margin-left: -50%;
+.mission_formation_1_gauche_fonds {
+    width: 50%;
+}
+
+.mission_formation_1_gauche_fonds img {
+    margin-left: 40%;
+}
+
+.mission_formation_1_droite_fonds {
+    width: 50%;
+}
+
+.mission_formation_1_elements {
+    margin-right: 30%;
 }
 
 .mission_formation_1_texte {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -650,20 +661,20 @@ body {
 
 .mission_formation_1_texte_titre {
     font-size: 40px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     font-weight: bold;
 }
 
 .mission_formation_1_texte_separation {
     border-top: 1px solid #000000;
     margin: 0 auto;
-    width: 20%;
+    width: 15%;
 }
 
 .mission_formation_1_texte_paragraphe {
     font-size: 20px;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
     line-height: 1.6;
     width: 600px;
 }
