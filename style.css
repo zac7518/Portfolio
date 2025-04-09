@@ -182,12 +182,12 @@ body {
     text-align: center;
     height: 100%;
     width: 100%;
-    padding: 2%;
+    padding: 10px;
 }
 
 .index_presentation_fonds_form_texte_titre {
     font-size: 40px;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     font-weight: bold;
     opacity: 0; 
     transition: opacity 1s ease-in-out;
@@ -211,8 +211,8 @@ body {
 
 .index_presentation_fonds_form_texte_paragraphe {
     font-size: 20px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     line-height: 1.6;
     opacity: 0; 
     transition: opacity 1s ease-in-out;
@@ -638,8 +638,8 @@ body {
     width: 50%;
 }
 
-.mission_formation_1_gauche_fonds img {
-    margin-left: 40%;
+.mission_formation_1_image {
+    margin-left: -0%;
 }
 
 .mission_formation_1_droite_fonds {
