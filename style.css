@@ -581,6 +581,102 @@ body {
     width: 600px;
 }
 
+/* Outils */
+
+.entreprise_outils_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.entreprise_outils_image_fonds {
+    width: 50%;
+}
+
+.entreprise_outils_image {
+    width: 60%;
+}
+
+.entreprise_outils_texte_fonds {
+    width: 50%;
+}
+
+.entreprise_outils_texte {
+    width: 50%;
+    margin-left: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entreprise_outils_texte_titre {
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.entreprise_outils_texte_separation {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.entreprise_outils_texte_paragraphe {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    line-height: 1.6;
+    width: 600px;
+}
+
+.entreprise_outils_carousel_image_fonds {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entreprise_outils_carousel_image {
+    width: 60%;
+}
+
+.entreprise_outils_carousel {
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.entreprise_outils_carousel_track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    animation-play-state: running;
+}
+
+.entreprise_outils_carousel_track:hover {
+    animation-play-state: paused;
+}
+
+.entreprise_outils_carousel_track div {
+    max-width: 80%;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* TABLEAU DE SYNTHESE */
 
 .tableau_fonds {
