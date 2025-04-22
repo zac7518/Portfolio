@@ -1936,9 +1936,16 @@ body {
     text-align: center;
 }
 
+.production_2_texte {
+    width: 50%
+}
+
 .production_2_image {
     width: 50%;
-    margin-left: 10%;
+}
+
+.production_2_image_i {
+    max-width: 50%
 }
 
 .production_2_texte_titre {
@@ -2043,6 +2050,21 @@ body {
 .veille_presentation_texte_paragraphe {
     font-size: 20px;
     line-height: 1.6;
+}
+
+/* Situation */
+
+.veille_situation_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Menaces */
+
+.veille_menaces_texte_paragraphe {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align:justify;
 }
 
 /* Articles de veille */
