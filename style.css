@@ -677,6 +677,63 @@ body {
     }
 }
 
+.entreprise_outils_categorie_fonds {
+    display: flex;
+}
+
+.entreprise_outils_categorie {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.entreprise_outils_categorie_image {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entreprise_outils_categorie_texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.entreprise_outils_categorie_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.entreprise_outils_categorie_texte_titre {
+    font-weight: bold;
+}
+
+.entreprise_outils_categorie_texte_paragraphe {
+    text-align: justify;
+    font-size: 80%;
+    padding: 5%;
+}
+
+.entreprise_outils_categorie_image_web {
+    width: 100px;
+    height: 100px;
+}
+
 /* TABLEAU DE SYNTHESE */
 
 .tableau_fonds {
