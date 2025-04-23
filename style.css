@@ -2260,7 +2260,6 @@ body {
 
 .veille_outils_categorie_texte_paragraphe {
     text-align: justify;
-    text-align-last: center;
     font-size: 80%;
     padding: 5%;
 }
