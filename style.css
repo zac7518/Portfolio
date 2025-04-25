@@ -2135,6 +2135,18 @@ body {
     line-height: 1.6;
 }
 
+/* Production */
+
+.veille_production_fonds {
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 /* Menaces */
 
 .veille_menaces_texte_paragraphe {
