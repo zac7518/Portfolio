@@ -2041,7 +2041,7 @@ body {
 
 .veille_introduction_fonds {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background: #ffffff;
     padding: 20px;
     position: relative;
@@ -2138,7 +2138,7 @@ body {
 /* Production */
 
 .veille_production_fonds {
-    height: 600px;
+    height: 400px;
     background: #ffffff;
     position: relative;
     display: flex;
@@ -2149,13 +2149,51 @@ body {
 
 /* Menaces */
 
+.veille_menaces_fonds {
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .veille_menaces_texte_paragraphe {
     font-size: 20px;
     line-height: 1.6;
     text-align:justify;
 }
 
+/* Solutions */
+
+.veille_solutions_fonds {
+    width: 100%;
+    height: 600px;
+    background: #ffffff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 /* RGPD */
+
+.veille_rgpd_fonds {
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
 .veille_introduction_texte {
     text-align: center;
@@ -2295,9 +2333,7 @@ body {
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: row;
-    /* Ajouté pour aligner les éléments en ligne */
     align-items: center;
-    /* Centrer verticalement les éléments */
 }
 
 .veille_outils_categorie_image {
@@ -2336,6 +2372,20 @@ body {
 .veille_outils_categorie_image_web {
     width: 100px;
     height: 100px;
+}
+
+/* Bilan */
+
+.veille_bilan_fonds {
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* MOBILE */
