@@ -2052,7 +2052,7 @@ body {
 }
 
 .veille_introduction_image {
-    width: 100%;
+    width: 40% !important;
 }
 
 .veille_introduction_texte {
@@ -2087,14 +2087,14 @@ body {
 }
 
 .veille_presentation_image {
-    width: 300px;
+    width: 30% !important;
+    margin-left: 30%;
 }
 
 .veille_presentation_texte {
     text-align: center;
     color: #212121;
-    width: 700px;
-    margin-right: 200px;
+    width: 600px;
 }
 
 .veille_presentation_texte_titre {
