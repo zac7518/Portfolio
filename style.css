@@ -1832,6 +1832,60 @@ body {
 
 /* SITUATIONS */
 
+/* Belle Table */
+
+.situation_fonds {
+    height: 1000px;
+    background: #BBBBBB;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.situation_contexte_fonds {
+    background: #ffffff;
+    width: 50%;
+    height: 100%;
+}
+
+.situation_contexte_titre_fonds {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.situation_contexte_titre {
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+}
+
+.situation_contexte_texte_fonds {
+    width: 80%;
+    height: 50%;
+    margin:0 auto;
+}
+
+.situation_contexte_texte {
+    font-size: 15px;
+}
+
+.situation_contexte_texte_titres {
+    margin-left: 50px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+/* Info Services */
+
+
+
 /* Situation 1 */
 
 .situation_1_fonds {
