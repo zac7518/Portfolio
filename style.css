@@ -1935,6 +1935,17 @@ body {
 
 /* PRODUCTION */
 
+.production_fonds {
+    height: 100%;
+    background: #AAAAAA;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
 /* Production 1 */
 
 .production_1_fonds {
