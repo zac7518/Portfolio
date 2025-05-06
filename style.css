@@ -736,17 +736,6 @@ body {
 
 /* TABLEAU DE SYNTHESE */
 
-.tableau_fonds {
-    height: 100vh;
-    background: #ffffff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-}
-
 .tableau_texte_titre {
     font-size: 40px;
     display: block;
@@ -1946,11 +1935,11 @@ body {
     text-align: center;
 }
 
-/* Production 1 */
+/* TABLEAU */
 
-.production_1_fonds {
-    height: 600px;
-    background: #ffffff;
+.tableau_fonds {
+    height: 100%;
+    background: #AAAAAA;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1959,95 +1948,28 @@ body {
     text-align: center;
 }
 
-.production_1_image {
-    width: 100%;
-    margin-left: 20%;
+.pdf-container {
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
 }
 
-.production_1_texte_titre {
-    font-size: 40px;
-    margin-bottom: 5%;
-    display: block;
-    font-weight: bold;
-}
-
-.production_1_texte_paragraphe {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 800px;
-}
-
-.production_1_disposition {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.production_1_bouton {
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-/* Production 2 */
-
-.production_2_fonds {
-    height: 600px;
-    margin-right: 10%;
-    background: #ffffff;
-    position: relative;
+.tableau_image_fonds {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    text-align: center;
 }
 
-.production_2_texte {
-    width: 50%
+.tableau_image {
+    max-width: 100%;
+    object-fit: cover; 
 }
 
-.production_2_image {
-    width: 50%;
-}
-
-.production_2_image_i {
-    max-width: 50%
-}
-
-.production_2_texte_titre {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 5%;
-    font-weight: bold;
-}
-
-.production_2_texte_paragraphe {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 800px;
-}
-
-.production_2_disposition {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.production_2_bouton {
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
+.tableau_bordure {
+    height: 30px;
 }
 
 /* VEILLE */
