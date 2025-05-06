@@ -1835,8 +1835,8 @@ body {
 /* Belle Table */
 
 .situation_fonds {
-    height: 1000px;
-    background: #BBBBBB;
+    height: 100%;
+    background: #AAAAAA;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1852,8 +1852,7 @@ body {
 }
 
 .situation_contexte_titre_fonds {
-    width: 100%;
-    height: 20%;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1867,12 +1866,12 @@ body {
 
 .situation_contexte_texte_fonds {
     width: 80%;
-    height: 50%;
     margin:0 auto;
 }
 
 .situation_contexte_texte {
     font-size: 15px;
+    text-align: justify;
 }
 
 .situation_contexte_texte_titres {
@@ -1881,109 +1880,60 @@ body {
     font-weight: bold;
 }
 
-
-/* Info Services */
-
-
-
-/* Situation 1 */
-
-.situation_1_fonds {
-    height: 600px;
-    background: #ffffff;
-    position: relative;
+.situation_contexte_texte_bouton_fonds {
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    text-align: center;
 }
 
-.situation_1_image {
+.situation_contexte_texte_bouton {
+    padding: 10px;
+    background-color: #adc178;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+}
+
+.situation_contexte_texte_bouton:active {
+    transform: scale(0.95); 
+}
+
+.situation_contexte_belletable_image_fonds {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.situation_contexte_separation_fonds {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.situation_contexte_separation {
+    border-top: 1px solid #bbbbbb;
     width: 100%;
-    margin-left: 20%;
 }
 
-.situation_1_texte_titre {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 5%;
-    font-weight: bold;
-}
-
-.situation_1_texte_paragraphe {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 800px;
-}
-
-.situations_1_disposition {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.situations_1_bouton {
+.situation_contexte_infoservices_image_fonds {
     padding: 15px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-/* Situation 2 */
-
-.situation_2_fonds {
-    height: 600px;
-    margin-right: 10%;
-    background: #ffffff;
-    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
 }
 
-.situation_2_image {
-    width: 50%;
-    margin-left: 10%;
+.situation_contexte_infoservices_image {
+    max-width: 500px;
+    max-height: 500px;
 }
 
-.situation_2_texte_titre {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 5%;
-    font-weight: bold;
+.situation_contexte_bordure {
+    height: 10px;
 }
 
-.situation_2_texte_paragraphe {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 800px;
-}
-
-.situations_2_disposition {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.situations_2_bouton {
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-/* SITUATIONS */
+/* PRODUCTION */
 
 /* Production 1 */
 
