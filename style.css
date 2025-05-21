@@ -734,32 +734,6 @@ body {
     height: 100px;
 }
 
-/* TABLEAU DE SYNTHESE */
-
-.tableau_texte_titre {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.tableau_texte_separation {
-    border-top: 1px solid #000000;
-    margin: 0 auto;
-    width: 20%;
-    margin-bottom: 50px;
-}
-
-.tableau_bouton {
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
 /* MISSIONS FORMATION */
 
 /* Mission formation 1 */
